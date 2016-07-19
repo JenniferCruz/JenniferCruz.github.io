@@ -11,7 +11,7 @@ replace the %data% placeholder text you see in them.
 */
 var HTMLheaderName = '<h1 class="name">%data%</h1>'
 // var HTMLheaderRole = '<span>%data%</span><hr>';
-var HTMLheaderRole = '<h3 class="role">%data%</h3>';
+var HTMLheaderRole = '<h2 class="role">%data%</h2>';
 //
 // var HTMLcontactGeneric = '<li class="flex-item"><span class="orange-text">%contact%</span><span class="white-text">%data%</span></li>';
 // var HTMLmobile = '<li class="flex-item"><span class="orange-text">mobile</span><span class="white-text">%data%</span></li>';
