@@ -117,17 +117,11 @@ h2.role {
     color: #6c8532;
 }
 
-.block {
+.flex-block {
   width: 42%;
   padding: 0.5em;
   margin: 0.5em;
   font-weight: 100;
-}
-
-.block-img {
-  width: 42%;
-  margin: 1em;
-  padding-left: 0.5em
 }
 
 .img-clip {
@@ -143,14 +137,14 @@ h2.role {
 }
 
 
-.block h3 {
+.flex-block h3 {
     margin: 0;
     text-align: right;
     text-transform: uppercase;
     font-weight: 100;
 }
 
-.block img {
+.flex-block img {
   width: 100%;
 }
 
@@ -158,9 +152,6 @@ h2.role {
   list-style-type: none;
 }
 
-.contact-section li {
-  /*margin: auto;*/
-}
 
 .fa {
     color: #93780f;
@@ -194,19 +185,18 @@ h2.role {
     justify-content: center;
   }
 
-  .block,
-  .block-img,
+  .flex-block,
   .title,
   .content {
     width: 100%;
   }
 
-  .clip {
-    order: 1;
-  }
-
   .contact-section {
     order: 0;
+  }
+
+  .img-clip {
+    order: 5;
   }
 
   .biopic {

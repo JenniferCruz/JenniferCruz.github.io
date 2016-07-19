@@ -9,20 +9,28 @@ Cameron Pittman
 These are HTML strings. As part of the course, you'll be using JavaScript functions
 replace the %data% placeholder text you see in them.
 */
-var HTMLheaderName = '<h1 class="name">%data%</h1>'
-// var HTMLheaderRole = '<span>%data%</span><hr>';
+var HTMLheaderName = '<h1 class="name">%data%</h1>';
 var HTMLheaderRole = '<h2 class="role">%data%</h2>';
-//
-// var HTMLcontactGeneric = '<li class="flex-item"><span class="orange-text">%contact%</span><span class="white-text">%data%</span></li>';
-// var HTMLmobile = '<li class="flex-item"><span class="orange-text">mobile</span><span class="white-text">%data%</span></li>';
-// var HTMLemail = '<li class="flex-item"><span class="orange-text">email</span><span class="white-text">%data%</span></li>';
-// var HTMLtwitter = '<li class="flex-item"><span class="orange-text">twitter</span><span class="white-text">%data%</span></li>';
-// var HTMLgithub = '<li class="flex-item"><span class="orange-text">github</span><span class="white-text">%data%</span></li>';
-// var HTMLblog = '<li class="flex-item"><span class="orange-text">blog</span><span class="white-text">%data%</span></li>';
-// var HTMLlocation = '<li class="flex-item"><span class="orange-text">location</span><span class="white-text">%data%</span></li>';
-//
+var HTMLPersonalSection = '<div class="title"><h2>Personal</h2></div>'; // myLABEL
+var HTMLPersonalContent = '<div id="personal-content" class="line content flex-box"></div>'; // myLABEL
+var HTMLBucketAbout = '<div id="about-me" class="flex-block violet"></div>';
+var HTMLBucketAboutTitle = '<h3>%data%</h3>';
+var HTMLwelcomeMsg = '<p>%data%</p>';
+var HTMLBucketPhrase = '<div id="decor-phrase" class="flex-block clip-phrase bright-orange"></div>';
+var HTMLBucketPicPersonal = '<div id="decor-pic" class="flex-block green img-clip"></div>';
+var HTMLBucketPic = '<img src="img/love.jpg" alt="" />';
+var HTMLDecorPhrase = '<p>%data%</p>';
+var HTMLBucketContact = '<div id="contact" class="flex-block contact-section mustard"></div>';
+var HTMLBucketContactTitle = '<h3>%data%</h3>';
+var HTMLContactList = '<ul id="contact-list"></ul>';
+var HTMLmobile = '<li><i class="fa fa-phone" aria-hidden="true"></i> %data%</li>';
+var HTMLemail = '<li><i class="fa fa-envelope" aria-hidden="true"></i> %data%</li>';
+var HTMLtwitter = '<li><i class="fa fa-twitter" aria-hidden="true"></i> %data%</li>';
+var HTMLgithub = '<li><i class="fa fa-github-alt" aria-hidden="true"></i> %data%</li>';
+var HTMLlocation = '<li><i class="fa fa-location-arrow" aria-hidden="true"></i> %data%</li>';
 var HTMLbioPic = '<img src="%data%" class="biopic">';
-// var HTMLwelcomeMsg = '<span class="welcome-message">%data%</span>';
+
+// var HTMLblog = '<li class="flex-item"><span class="orange-text">blog</span><span class="white-text">%data%</span></li>';
 //
 // var HTMLskillsStart = '<h3 id="skills-h3">Skills at a Glance:</h3><ul id="skills" class="flex-box"></ul>';
 // var HTMLskills = '<li class="flex-item"><span class="white-text">%data%</span></li>';
