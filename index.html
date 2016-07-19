@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <title>J's Resume</title>
     <link href="css/styles.css" rel="stylesheet">
-    <!-- <script src="js/jQuery.js"></script> -->
+    <script src="js/jQuery.js"></script>
 
     <!-- More on helper.js in the class -->
-    <!-- <script src="js/helper.js"></script> -->
+    <script src="js/helper.js"></script>
 
     <!-- Add an interactive Google Map to your resume! -->
     <!-- <script src="http://maps.googleapis.com/maps/api/js?libraries=places"></script> -->
@@ -19,7 +19,7 @@
   <body>
 
     <div class="container">
-      <div class="line header">
+      <div id="header" class="header-top"><!--ID updated as per original-->
         <nav>
           <ul>
             <li><a href="#">personal</a></li>
@@ -28,16 +28,43 @@
             <li><a href="#">education</a></li>
           </ul>
         </nav>
-        <div class="line header-img">
-          <h3 class="role">WEB</h3>
-          <img src="img/me.jpg" alt="" class="personal-img"/>
-          <h3 class="role">DEV</h3>
+        <div id="header-intro" class="h-intro flex-box">
         </div>
-        <h1 class="name">Jennifer</h1>
       </div>
-      <div class="line personal-info">
+      <div class="personal-info flex-box">
+        <div class="title">
+          <h3>Personal</h3>
+        </div>
+        <div class="line content flex-box">
+          <div id="me-who" class="block">
+            <p>
+              I am me and blahJavaScript, don't forget the closing script tag with the slash.
+            </p>
+          </div>
+          <div id="decor-phrase" class="block">
+            <p>
+              Essentially, the next few lines are checking to see if you have not
+              changed each section of the resume.
+            </p>
+          </div>
 
-      </div>
+          <div id="decor-pic" class="block">
+            <img src="img/grunt-logo.png" alt="" />
+          </div>
+
+          <div id="contact" class="block">
+              <ul>
+                <li>469-992-2349</li>
+                <li>jennifer.cruzz@gmail.com</li>
+                <li>github</li>
+                <li>twitter</li>
+                <li>this what?</li>
+              </ul>
+          </div>
+        </div>
+        </div>
+
+
       <div class="line skills">
 
       </div>
@@ -57,6 +84,7 @@
       </div>
 
     </div>
+    <script src="js/resumeBuilder.js"></script>
 
 
 
