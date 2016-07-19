@@ -1,0 +1,83 @@
+/*font-family: 'Oswald', sans-serif;*/
+/*font-family: 'Raleway', sans-serif;*/
+/* entypo */
+/*[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}
+
+/* fontelico */
+/*[class*="fontelico-"]:before {
+  font-family: 'fontelico', sans-serif;
+}*/
+
+
+body {
+  /*background-color: #d3e194;*/
+  background: url('../img/bg-bamboo.jpg') no-repeat 80% 50% fixed;
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+}
+
+.container {
+  width: 70em;
+  border: 3px solid red;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+nav ul {
+  list-style-type: none;
+  text-align: center;
+  padding-left: 0;
+}
+
+nav li {
+  display: inline;
+  margin: 5px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+}
+
+
+.personal-img {
+  /*margin: auto;*/
+  /*display: block;*/
+  border-radius: 20em;
+  width: 50%;
+  border: 1em solid;
+  margin: 0 15px;
+}
+
+@media only screen and (min-width: 601px){
+  .personal-img {
+    width: 25%;
+  }
+}
+
+
+@media only screen and (max-width: 500px) {
+  /* hamburguer menu */
+}
+
+.name {
+  text-align: center;
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+h3.role {
+  display: inline;
+  font-size: 2em;
+  font-weight: normal;
+}
+
+
+.header-img {
+  /*text-align: center;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
