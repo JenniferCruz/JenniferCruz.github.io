@@ -46,11 +46,6 @@ body {
   margin-right: auto;
 }
 
-@media screen and (max-width: 800px) {
-  .container {
-    width: 100%;
-  }
-}
 
 /* Navigation menu */
 nav ul {
@@ -70,6 +65,10 @@ nav a {
 }
 
 /* Header intro */
+header {
+  margin-bottom: 1.5em;
+}
+
 .biopic {
   border-radius: 20em;
   width: 25%;
@@ -107,9 +106,9 @@ h2.role {
 .title h2 {
     text-transform: uppercase;
     text-align: right;
-    margin-top: 0.25em;
     font-weight: 100;
     color: #6c8532;
+    margin: 0;
 }
 
 .flex-block {
@@ -178,11 +177,57 @@ h2.role {
 
 
 
-@media only screen and (max-width: 700px) {
-  .flex-block,
+/* Skills section */
+.skill:nth-child(1), .skill:nth-child(7) {
+  background-color: #30aadb;
+}
+.skill:nth-child(2), .skill:nth-child(8) {
+  background-color: #6735cc;
+}
+.skill:nth-child(3), .skill:nth-child(9) {
+  background-color: #fba919;
+}
+.skill:nth-child(4), .skill:nth-child(10) {
+  background-color: #e44503;
+}
+.skill:nth-child(5), .skill:nth-child(11) {
+  background-color: #009997;
+}
+.skill:nth-child(6), .skill:nth-child(12) {
+  background-color: #8cb13f;
+}
+
+.standout {
+  text-align: center;
+  font-size: 5em;
+  order: 10;
+}
+
+.skill img {
+  max-width: 12em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2em 0;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 800px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 750px) {
   .title,
   .content {
     width: 100%;
+  }
+
+
+  .flex-block {
+    width: 45%;
   }
 
   .contact-section {
@@ -197,42 +242,19 @@ h2.role {
     width: 40%;
     border: 0.75em solid black;
   }
+
+  .title h2 {
+    text-align: left;
+    font-size: 2em;
+    color: #4c5c22;
+  }
 }
 
-/* Skills section */
-.skill:nth-child(1n) {
-  background-color: #30aadb;
+@media only screen and (max-width: 680px) {
+  .flex-block {
+    width: 90%;
+  }
 }
-.skill:nth-child(2n) {
-  background-color: #6735cc;
-}
-.skill:nth-child(3n) {
-  background-color: #fba919;
-}
-.skill:nth-child(4n) {
-  background-color: #e44503;
-}
-.skill:nth-child(5n) {
-  background-color: #009997;
-}
-.skill:nth-child(6) {
-  background-color: #8cb13f;
-}
-
-.standout {
-  text-align: center;
-  font-size: 5em;
-}
-
-.skill img {
-  max-width: 12em;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 2em 0;
-}
-
-/* Media queries */
 
 @media only screen and (max-width: 500px) {
   /* hamburguer menu */
