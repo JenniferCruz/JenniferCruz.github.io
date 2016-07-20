@@ -4,11 +4,7 @@
 /*[class*="entypo-"]:before {
   font-family: 'entypo', sans-serif;
 }
-
-/* fontelico */
-/*[class*="fontelico-"]:before {
-  font-family: 'fontelico', sans-serif;
-}
+/*
 violeta
 #7e1275
 
@@ -45,7 +41,7 @@ body {
 
 .container {
   width: 80%;
-  border: 3px solid red;
+  /*border: 3px solid red;*/
   margin-left: auto;
   margin-right: auto;
 }
@@ -74,7 +70,6 @@ nav a {
 }
 
 /* Header intro */
-
 .biopic {
   border-radius: 20em;
   width: 25%;
@@ -91,8 +86,6 @@ nav a {
 .flex-box {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  
 }
 
 h2.role {
@@ -206,6 +199,7 @@ h2.role {
   }
 }
 
+/* Skills section */
 .skill:nth-child(1n) {
   background-color: #30aadb;
 }
@@ -229,9 +223,6 @@ h2.role {
   text-align: center;
   font-size: 5em;
 }
-
-
-
 
 .skill img {
   max-width: 12em;

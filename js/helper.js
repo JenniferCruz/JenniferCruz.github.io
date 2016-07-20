@@ -6,15 +6,14 @@ Cameron Pittman
 
 
 /*
-These are HTML strings. As part of the course, you'll be using JavaScript functions
-replace the %data% placeholder text you see in them.
+variable names and html strings have been adjusted
 */
 var HTMLheaderName = '<h1 class="name">%data%</h1>';
 var HTMLheaderRole = '<h2 class="role">%data%</h2>';
 var HTMLPersonalSectionTitle = '<div class="title"><h2>Personal</h2></div>'; // myLABEL
 var HTMLPersonalContent = '<div id="personal-content" class="line content flex-box"></div>'; // myLABEL
-var HTMLBucketAbout = '<div id="about-me" class="flex-block violet"></div>';
-var HTMLBucketAboutTitle = '<h3>%data%</h3>';
+var HTMLabout = '<div id="about-me" class="flex-block violet"></div>';
+var HTMLaboutTitle = '<h3>%data%</h3>';
 var HTMLwelcomeMsg = '<p>%data%</p>';
 var HTMLBucketPhrase = '<div id="decor-phrase" class="flex-block clip-phrase bright-orange"></div>';
 var HTMLBucketPicPersonal = '<div id="decor-pic" class="flex-block green img-clip"></div>';
@@ -29,16 +28,12 @@ var HTMLtwitter = '<li><i class="fa fa-twitter" aria-hidden="true"></i> %data%</
 var HTMLgithub = '<li><i class="fa fa-github-alt" aria-hidden="true"></i> %data%</li>';
 var HTMLlocation = '<li><i class="fa fa-location-arrow" aria-hidden="true"></i> %data%</li>';
 var HTMLbioPic = '<img src="%data%" class="biopic">';
-
 var HTMLSkillsTitle = '<div class="title"><h2>Skills</h2></div>'; // myLABEL
 var HTMLSkillsContent = '<div id="skills-content" class="line content flex-box"></div>'; // myLABEL
 var HTMLSkillTextBucket = '<div class="flex-block skill standout">%data%</div>';
 var HTMLSkillImgBucket = '<div class="flex-block skill img-clip"><img src="%image%" alt="" /></div>';
 
-// var HTMLblog = '<li class="flex-item"><span class="orange-text">blog</span><span class="white-text">%data%</span></li>';
 //
-// var HTMLskillsStart = '<h3 id="skills-h3">Skills at a Glance:</h3><ul id="skills" class="flex-box"></ul>';
-// var HTMLskills = '<li class="flex-item"><span class="white-text">%data%</span></li>';
 //
 // var HTMLworkStart = '<div class="work-entry"></div>';
 // var HTMLworkEmployer = '<a href="#">%data%';
