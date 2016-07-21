@@ -50,6 +50,7 @@ var HTMLprojectBucket = '<div class="flex-block project-entry"></div>';
 var HTMLprojectDates = '<div class="date-text">%data%</div>';
 var HTMLprojectDescription = '<p>%data%</p>';
 var HTMLprojectImage = '<img src="%data%">';
+var HTMLprojectName = '<h3>%data%</h3>';
 //
 // var HTMLschoolStart = '<div class="education-entry"></div>';
 // var HTMLschoolName = '<a href="#">%data%';

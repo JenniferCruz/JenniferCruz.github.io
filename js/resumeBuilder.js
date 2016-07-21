@@ -93,12 +93,12 @@ var bio = {
      $("#projects").append(HTMLprojectsContent);
      for(var i=0; i<this.projects.length; i++){
        $("#projects-content").append(HTMLprojectBucket);
-       $(".project-entry:last").append(HTMLprojectTitle.replace("%data%", this.projects[i].title));
+       $(".project-entry:last").append(HTMLprojectName.replace("%data%", this.projects[i].title));
+        // for(var j=0; j<this.projects[i].images; j++){
+        //   $(".project-entry:last").append(HTMLprojectImage.replace("%data%", this.projects[i].images[j]));
+        // }
        $(".project-entry:last").append(HTMLprojectDates.replace("%data%", this.projects[i].dates));
        $(".project-entry:last").append(HTMLprojectDescription.replace("%data%", this.projects[i].description));
-      //  for(var j=0; j<this.projects[i].images; j++){
-      //    $(".project-entry").append(HTMLprojectImage.replace("%data%", this.projects[i].images[j]));
-      //  }
      }
    }
  }
