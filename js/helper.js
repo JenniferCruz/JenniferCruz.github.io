@@ -44,10 +44,12 @@ var HTMLSkillImgBucket = '<div class="flex-block skill img-clip-logo"><img src="
 // var HTMLworkDescription = '<p><br>%data%</p>';
 //
 // var HTMLprojectStart = '<div class="project-entry"></div>';
-// var HTMLprojectTitle = '<a href="#">%data%</a>';
-// var HTMLprojectDates = '<div class="date-text">%data%</div>';
-// var HTMLprojectDescription = '<p><br>%data%</p>';
-// var HTMLprojectImage = '<img src="%data%">';
+var HTMLprojectTitle = '<div class="title"><h2>Projects</h2></div>';
+var HTMLprojectsContent = '<div id="projects-content" class="line content flex-box"></div>';
+var HTMLprojectBucket = '<div class="flex-block project-entry"></div>';
+var HTMLprojectDates = '<div class="date-text">%data%</div>';
+var HTMLprojectDescription = '<p>%data%</p>';
+var HTMLprojectImage = '<img src="%data%">';
 //
 // var HTMLschoolStart = '<div class="education-entry"></div>';
 // var HTMLschoolName = '<a href="#">%data%';

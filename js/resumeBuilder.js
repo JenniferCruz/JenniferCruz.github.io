@@ -72,4 +72,36 @@ var bio = {
    }
  }
 
+
+ var projects = {
+   "projects" : [
+     {
+       "title" : "Grid layout framework",
+       "dates": "05-2016",
+       "description": "Responsive website developed using own implementation of a grid layout system.",
+       "images": ["images/a.jpg", "images/b.jpg"]
+     },
+     {
+       "title" : "Bootstrap Framework",
+       "dates": "06-2016",
+       "description": "Responsive website developed using Bootstrap",
+       "images": ["images/a.jpg", "images/b.jpg"]
+     }
+   ],
+   "display": function(){
+     $("#projects").append(HTMLprojectTitle);
+     $("#projects").append(HTMLprojectsContent);
+     for(var i=0; i<this.projects.length; i++){
+       $("#projects-content").append(HTMLprojectBucket);
+       $(".project-entry:last").append(HTMLprojectTitle.replace("%data%", this.projects[i].title));
+       $(".project-entry:last").append(HTMLprojectDates.replace("%data%", this.projects[i].dates));
+       $(".project-entry:last").append(HTMLprojectDescription.replace("%data%", this.projects[i].description));
+      //  for(var j=0; j<this.projects[i].images; j++){
+      //    $(".project-entry").append(HTMLprojectImage.replace("%data%", this.projects[i].images[j]));
+      //  }
+     }
+   }
+ }
+
 bio.display();
+projects.display();
