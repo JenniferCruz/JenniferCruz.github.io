@@ -48,6 +48,17 @@ body {
 
 
 /* Navigation menu */
+i.fa.fa-bars {
+  font-size: 2em;
+  color: #4c5c22;
+  display: none;
+}
+
+header a {
+  text-decoration: none;
+}
+
+
 nav ul {
   list-style-type: none;
   text-align: center;
@@ -152,7 +163,7 @@ h2.role {
 }
 
 
-.fa {
+.fa-icon {
     color: #93780f;
     font-size: 2.5em !important;
     margin-right: 10px;
@@ -312,6 +323,33 @@ h2.role {
 
   h2.role {
     margin: 0;
+  }
+
+
+  nav li {
+    display: list-item; /* display them as a list */
+    text-align: left;
+    border-bottom: 1px solid black;
+  }
+  nav ul {
+    z-index: 10;
+    width: 90%;
+    font-size: 1.5em;
+    position: absolute;
+    margin: 5px 0;
+    background: rgba(76, 92, 34, 0.9);
+    -webkit-transform: translate(-1000px, 0);
+    transform: translate(-1000px, 0);
+  }
+  
+  nav ul.open {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+
+
+  i.fa.fa-bars {
+    display: inline;
   }
 
 }
