@@ -17,7 +17,7 @@ var bio = {
      $("#header-intro").append(HTMLheaderRole.replace("%data%", role_split[0]));
      $("#header-intro").append(HTMLbioPic.replace("%data%", this.biopic));
      $("#header-intro").append(HTMLheaderRole.replace("%data%", role_split[1]));
-     $("#header").append(HTMLheaderName.replace("%data%", this.name));
+     $("header").append(HTMLheaderName.replace("%data%", this.name));
      // Render personal information section
      $("#personal-section").prepend(HTMLPersonalSectionTitle);
      $("#personal-section").append(HTMLPersonalContent);

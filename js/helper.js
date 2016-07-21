@@ -8,10 +8,12 @@ Cameron Pittman
 /*
 variable names and html strings have been adjusted
 */
-var HTMLheaderName = '<h1 class="name">%data%</h1>';
+var HTMLbioPic = '<img src="%data%" class="biopic">';
 var HTMLheaderRole = '<h2 class="role">%data%</h2>';
-var HTMLPersonalSectionTitle = '<div class="title"><h2>Personal</h2></div>'; // myLABEL
-var HTMLPersonalContent = '<div id="personal-content" class="line content flex-box"></div>'; // myLABEL
+var HTMLheaderName = '<div><h1 class="name">%data%</h1><div>';
+
+var HTMLPersonalSectionTitle = '<div class="title"><h2>Personal</h2></div>';
+var HTMLPersonalContent = '<div id="personal-content" class="line content flex-box"></div>';
 var HTMLabout = '<div id="about-me" class="flex-block violet"></div>';
 var HTMLaboutTitle = '<h3>%data%</h3>';
 var HTMLwelcomeMsg = '<p>%data%</p>';
@@ -27,11 +29,10 @@ var HTMLemail = '<li><i class="fa fa-envelope" aria-hidden="true"></i> %data%</l
 var HTMLtwitter = '<li><i class="fa fa-twitter" aria-hidden="true"></i> %data%</li>';
 var HTMLgithub = '<li><i class="fa fa-github-alt" aria-hidden="true"></i> %data%</li>';
 var HTMLlocation = '<li><i class="fa fa-location-arrow" aria-hidden="true"></i> %data%</li>';
-var HTMLbioPic = '<img src="%data%" class="biopic">';
-var HTMLSkillsTitle = '<div class="title"><h2>Skills</h2></div>'; // myLABEL
-var HTMLSkillsContent = '<div id="skills-content" class="line content flex-box"></div>'; // myLABEL
+var HTMLSkillsTitle = '<div class="title"><h2>Skills</h2></div>';
+var HTMLSkillsContent = '<div id="skills-content" class="line content flex-box"></div>';
 var HTMLSkillTextBucket = '<div class="flex-block skill standout">%data%</div>';
-var HTMLSkillImgBucket = '<div class="flex-block skill img-clip"><img src="%image%" alt="" /></div>';
+var HTMLSkillImgBucket = '<div class="flex-block skill img-clip-logo"><img src="%image%" alt="" /></div>';
 
 //
 //
