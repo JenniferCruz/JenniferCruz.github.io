@@ -172,9 +172,85 @@ var bio = {
    }
  }
 
+ var education = {
+   "schools": [
+     {
+       "name" : "EAE Business School",
+       "location" : "(Online)",
+       "degree" : "Masters",
+       "majors" : ["Web marketing", "E-Commerce"],
+       "dates" : "2011-2012",
+       "url" : "http://en.obs-edu.com"
+     },
+     {
+       "name" : "APEC University",
+       "location" : "Santo Domingo, Dominican Republic",
+       "degree" : "BA",
+       "majors" : ["Marketing"],
+       "dates" : "2006-2010",
+       "url" : "https://www.unapec.edu.do/"
+     }
+   ],
+   "onlineCourses" : [
+     {
+       "title": "Front-End Web Developer Nanodegree",
+       "school": "Udacity",
+       "dates": "2016",
+       "url": "https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001"
+     },
+     {
+       "title": "Interactive programming in Python",
+       "school": "Coursera",
+       "dates": "2014",
+       "url": "https://www.coursera.org/account/accomplishments/verify/TLP8LF7HRT"
+     },
+     {
+       "title": "Principles of computing",
+       "school": "Coursera",
+       "dates": "2014",
+       "url": "https://www.coursera.org/account/accomplishments/verify/FTQ8C6WC4V"
+     }
+   ],
+   "display" : function(){
+     $("#education").append(HTMLeducationTitle);
+     $("#education").append(HTMLeducationContent);
+     for(var i=0; i<this.schools.length; i++){
+       this.displaySchools(i);
+     }
+
+     for(var i=0; i<this.schools.length; i++){
+       this.displayOnlineCourses(i);
+     }
+   },
+
+   "displaySchools" : function(index){
+     $("#ed-content").append(HTMLedBucket);
+     $(".ed-entry:last").append(HTMLschoolMajor.replace("%data%", this.schools[index].majors[i] + " "));
+     for(var i=0; i<this.schools[index].majors.length; i++){
+       $(".ed-entry:last h3").append(this.schools[index].majors[i]);
+       if(i < this.schools[index].majors.length - 1) $(".ed-entry:last h3").append(" / ");
+     }
+     $(".ed-entry:last").append(HTMLschoolDegree.replace("%data%", this.schools[index].degree));
+     $(".ed-entry:last").append(HTMLschoolName.replace("%data%", this.schools[index].name).replace("#",  this.schools[index].url));
+     $(".ed-entry:last").append(HTMLschoolDates.replace("%data%", this.schools[index].dates));
+     $(".ed-entry:last").append(HTMLschoolLocation.replace("%data%", this.schools[index].location));
+    //  $(".ed-entry a").attr("target", "_blank");
+   },
+
+   "displayOnlineCourses" : function(index){
+     $("#ed-content").append(HTMLedBucket);
+     $(".ed-entry:last").append(HTMLonlineTitle.replace("%data%", this.onlineCourses[index].title));
+     $(".ed-entry:last").append(HTMLonlineSchool.replace("%data%", this.onlineCourses[index].school));
+     $(".ed-entry:last").append(HTMLonlineDates.replace("%data%", this.onlineCourses[index].dates));
+     $(".ed-entry:last").append(HTMLonlineURL.replace("%linkTo%", this.onlineCourses[index].url).replace("%data%", "go to course page>"));
+    //  $(".ed-entry:last a:last").attr("href", this.onlineCourses[index].url);
+    //  $(".ed-entry:last a:last").attr("target", "_blank");
+   }
+ }
 
 
 
 bio.display();
 projects.display();
 work.display();
+education.display();

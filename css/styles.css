@@ -179,23 +179,28 @@ h2.role {
 
 /* Buckets background colors */
 .violet,
-.project-entry:nth-child(1) {
+.project-entry:nth-child(1),
+.ed-entry:nth-child(1) {
   background-color: #7e1275;
   color: #fff;
 }
 
 .bright-orange,
-.project-entry:nth-child(2) {
+.project-entry:nth-child(2),
+.ed-entry:nth-child(2) {
   background-color: #f60;
 }
 
 .green,
-.work-entry:nth-child(1) {
+.work-entry:nth-child(1),
+.ed-entry:nth-child(3) {
   background-color: #8cb13f;
 }
 
 .mustard,
-.work-entry:nth-child(2) {
+.work-entry:nth-child(2),
+.ed-entry:nth-child(5),
+.ed-entry:nth-child(4) {
   background-color: #efbf03;
   color: #fff;
 }
