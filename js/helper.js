@@ -34,14 +34,15 @@ var HTMLSkillsContent = '<div id="skills-content" class="line content flex-box">
 var HTMLSkillTextBucket = '<div class="flex-block skill standout">%data%</div>';
 var HTMLSkillImgBucket = '<div class="flex-block skill img-clip-logo"><img src="%image%" alt="" /></div>';
 
-//
-//
 // var HTMLworkStart = '<div class="work-entry"></div>';
-// var HTMLworkEmployer = '<a href="#">%data%';
-// var HTMLworkTitle = ' - %data%</a>';
-// var HTMLworkDates = '<div class="date-text">%data%</div>';
-// var HTMLworkLocation = '<div class="location-text">%data%</div>';
-// var HTMLworkDescription = '<p><br>%data%</p>';
+var HTMLworkTitle = '<div class="title"><h2>Work Experience</h2></div>';
+var HTMLworkContent = '<div id="work-content" class="line content flex-box"></div>';
+var HTMLworkBucket = '<div class="flex-block work-entry"></div>';
+var HTMLworkEmployer = '<h3>%data%</h3>';
+var HTMLworkDates = '<div class="date-text">%data%</div>';
+var HTMLjobTitle = '<h4>%data%</h4>';
+var HTMLworkLocation = '<div class="location-text">%data%</div>';
+var HTMLworkDescription = '<p>%data%</p>';
 //
 // var HTMLprojectStart = '<div class="project-entry"></div>';
 var HTMLprojectTitle = '<div class="title"><h2>Projects</h2></div>';

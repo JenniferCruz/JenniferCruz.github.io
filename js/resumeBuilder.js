@@ -105,8 +105,76 @@ var bio = {
  }
 
 
+ var work = {
+   "jobs" : [
+     {
+       "employer": "Akendos",
+       "title": "Business Analyst",
+       "location": "Bogota, Colombia",
+       "dates": "2015-2016",
+       "description": "lorem ipsum description goes here"
+     },
+     {
+       "employer": "THINK creative group",
+       "title": "Quality Assurance",
+       "location": "(Online)",
+       "dates": "2014-2015",
+       "description": "lorem ipsum description goes here"
+     },
+     {
+       "employer": "Akendos",
+       "title": "Project Manager",
+       "location": "Cartagena, Colombia",
+       "dates": "2013-2014",
+       "description": "lorem ipsum description goes here"
+     },
+     {
+       "employer": "Universidad Tecnológica de Bolívar",
+       "title": "Web marketing consultant for APPS.CO entrepreneurships",
+       "location": "Cartagena, Colombia",
+       "dates": "2012-2013",
+       "description": "lorem ipsum description goes here"
+     },
+     {
+       "employer": "THINK creative group",
+       "title": "Web Projects Coordinator",
+       "location": "(Online)",
+       "dates": "2010-2012",
+       "description": "lorem ipsum description goes here"
+     },
+     {
+       "employer": "AIESEC Dominican republic",
+       "title": "Member Committee President",
+       "location": "Santo Domingo, Dominican Republic",
+       "dates": "2009-2010",
+       "description": "lorem ipsum description goes here"
+     },
+     {
+       "employer": "Iberocamerican University",
+       "title": "Italian Teacher",
+       "location": "Santo Domingo, Dominican Republic",
+       "dates": "2008-2010",
+       "description": "lorem ipsum description goes here"
+     }
+   ],
+   "display": function(){
+
+     $("#work-experience").append(HTMLworkTitle);
+     $("#work-experience").append(HTMLworkContent);
+     for(var i=0; i<this.jobs.length; i++){
+       $("#work-content").append(HTMLworkBucket);
+       $(".work-entry:last").append(HTMLworkEmployer.replace("%data%", this.jobs[i].employer));
+       $(".work-entry:last").append(HTMLworkDates.replace("%data%", this.jobs[i].dates));
+       $(".work-entry:last").append(HTMLjobTitle.replace("%data%", this.jobs[i].title));
+       $(".work-entry:last").append(HTMLworkLocation.replace("%data%", this.jobs[i].location));
+       $(".work-entry:last").append(HTMLworkDescription.replace("%data%", this.jobs[i].description));
+     }
+   }
+ }
+
 
 
 
 bio.display();
 projects.display();
+work.display();
