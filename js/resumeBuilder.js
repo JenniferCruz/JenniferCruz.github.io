@@ -1,3 +1,5 @@
+var coolImgCounter = 1;
+
 var bio = {
    "name":"Jennifer",
    "role":"web dev",
@@ -168,8 +170,16 @@ var bio = {
        $(".work-entry:last").append(HTMLjobTitle.replace("%data%", this.jobs[i].title));
        $(".work-entry:last").append(HTMLworkLocation.replace("%data%", this.jobs[i].location));
        $(".work-entry:last").append(HTMLworkDescription.replace("%data%", this.jobs[i].description));
+       if(i === 2 || i === 6){
+         insertCoolPic("#work-content");
+       }
      }
    }
+ }
+
+function insertCoolPic(section){
+   $(section).append(HTMLimgBucket);
+   $(".cool-img:last").append('<img src=img/cool'+ coolImgCounter++ +'.jpg>');
  }
 
  var education = {
@@ -216,10 +226,16 @@ var bio = {
      $("#education").append(HTMLeducationContent);
      for(var i=0; i<this.schools.length; i++){
        this.displaySchools(i);
+       if(i === 2 || i === 6){
+         insertCoolPic("#ed-content");
+       }
      }
 
-     for(var i=0; i<this.schools.length; i++){
+     for(var i=0; i<this.onlineCourses.length; i++){
        this.displayOnlineCourses(i);
+       if(i === 2 || i === 6){
+         insertCoolPic("#ed-content");
+       }
      }
    },
 
@@ -234,7 +250,7 @@ var bio = {
      $(".ed-entry:last").append(HTMLschoolName.replace("%data%", this.schools[index].name).replace("#",  this.schools[index].url));
      $(".ed-entry:last").append(HTMLschoolDates.replace("%data%", this.schools[index].dates));
      $(".ed-entry:last").append(HTMLschoolLocation.replace("%data%", this.schools[index].location));
-    //  $(".ed-entry a").attr("target", "_blank");
+     $(".ed-entry:last").append(HTMLschoolURL.replace("%linkTo%", this.schools[index].url).replace("%data%", "visit school website>"));
    },
 
    "displayOnlineCourses" : function(index){
@@ -243,8 +259,6 @@ var bio = {
      $(".ed-entry:last").append(HTMLonlineSchool.replace("%data%", this.onlineCourses[index].school));
      $(".ed-entry:last").append(HTMLonlineDates.replace("%data%", this.onlineCourses[index].dates));
      $(".ed-entry:last").append(HTMLonlineURL.replace("%linkTo%", this.onlineCourses[index].url).replace("%data%", "go to course page>"));
-    //  $(".ed-entry:last a:last").attr("href", this.onlineCourses[index].url);
-    //  $(".ed-entry:last a:last").attr("target", "_blank");
    }
  }
 

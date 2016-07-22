@@ -40,7 +40,7 @@ body {
 }
 
 .container {
-  width: 70%;
+  width: 75%;
   /*border: 3px solid red;*/
   margin-left: auto;
   margin-right: auto;
@@ -122,7 +122,7 @@ h2.role {
     text-align: right;
     font-weight: 100;
     color: #6c8532;
-    margin: 0 0.5em 0 0;
+    margin: 0;
     font-size: 2em;
 }
 
@@ -199,7 +199,6 @@ h2.role {
 
 .mustard,
 .work-entry:nth-child(2),
-.ed-entry:nth-child(5),
 .ed-entry:nth-child(4) {
   background-color: #efbf03;
   color: #fff;
@@ -207,7 +206,8 @@ h2.role {
 
 .skill:nth-child(1),
 .skill:nth-child(7),
-.work-entry:nth-child(3) {
+.work-entry:nth-child(3),
+.ed-entry:nth-child(5) {
   background-color: #30aadb;
 }
 .skill:nth-child(2),
@@ -231,10 +231,14 @@ h2.role {
   background-color: #009997;
 }
 .skill:nth-child(6),
-.skill:nth-child(12) {
+.skill:nth-child(12),
+.work-entry:nth-child(8) {
   background-color: #8cb13f;
 }
 
+.cool-img {
+  background-color: coral;
+}
 /* Skills section */
 
 .standout {

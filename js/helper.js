@@ -61,12 +61,16 @@ var HTMLschoolDegree = '<h3>%data%</h3>';
 var HTMLschoolName = '<h4>%data%</h4>';
 var HTMLschoolDates = '<div class="date-text">%data%</div>';
 var HTMLschoolLocation = '<div class="location-text">%data%</div>';
+var HTMLschoolURL = '<a href="linkTo">%data%</a>';
 //
 // var HTMLonlineClasses = '<h3>Online Classes</h3>';
 var HTMLonlineTitle = '<h3>%data%</h3>';
 var HTMLonlineSchool = '<h4>%data%</h4>';
 var HTMLonlineDates = '<div class="date-text">%data%</div>';
 var HTMLonlineURL = '<a href="linkTo">%data%</a>';
+
+var HTMLimgBucket = '<div class="flex-block cool-img"></div>';
+
 //
 // var internationalizeButton = '<button>Internationalize</button>';
 // var googleMap = '<div id="map"></div>';
