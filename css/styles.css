@@ -146,10 +146,11 @@ h2.role {
   width: 86%;
 }
 
-
+h3.right-h3 {
+  text-align: right;
+}
 .flex-block h3 {
     margin: 0;
-    text-align: right;
     text-transform: uppercase;
     font-weight: 100;
 }
@@ -255,6 +256,26 @@ h2.role {
   padding: 2em 0;
 }
 
+/* */
+h4 {
+    margin: 10px 0;
+}
+.date-text {
+    font-size: 0.8em;
+}
+
+p.description {
+    font-family: 'Raleway', sans-serif;
+    margin-left: 10px;
+    border-left: 2px solid #d3e194;
+    padding-left: 5px;
+}
+
+a {
+    color: gainsboro;
+    text-decoration: none;
+    font-size: 0.9em;
+}
 
 /* Media queries */
 @media screen and (max-width: 1300px) {

@@ -114,7 +114,7 @@ var bio = {
        "title": "Business Analyst",
        "location": "Bogota, Colombia",
        "dates": "2015-2016",
-       "description": "lorem ipsum description goes here"
+       "description": "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum description goes here"
      },
      {
        "employer": "THINK creative group",
