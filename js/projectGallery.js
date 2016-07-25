@@ -44,15 +44,15 @@ function doGallery(container) {
 
 
   function enableTheOtherArrow(arrowClass){
-    $(arrowClass).removeClass("unabled").addClass("abled");
+    $(arrowClass, container).removeClass("unabled").addClass("abled");
   }
 
 
   function disableArrowAtLastPosition(arrowClass, position){
     if(position === 0){
-        $(arrowClass).addClass("unabled").removeClass("abled");
+        $(arrowClass, container).addClass("unabled").removeClass("abled");
     } else if(position === limit){
-      $(arrowClass).addClass("unabled").removeClass("abled");
+      $(arrowClass, container).addClass("unabled").removeClass("abled");
     }
   }
 }
