@@ -85,6 +85,10 @@ nav a {
   color: #000;
 }
 
+.close-icon {
+  display: none;
+}
+
 /* Header intro */
 header {
   width: 91%;
@@ -423,19 +427,28 @@ p.description {
     margin: 0;
   }
 
+  .open-icon {
+    display: block;
+  }
 
   nav li {
     display: list-item; /* display them as a list */
     text-align: left;
     border-bottom: 1px solid black;
   }
+
+  .close-icon {
+    display: block;
+    font-size: 1.5em;
+  }
+
   nav ul {
     z-index: 10;
     width: 90%;
     font-size: 1.5em;
     position: absolute;
     margin: 5px 0;
-    background: rgba(76, 92, 34, 0.9);
+    background: rgba(211, 225, 40, 0.98);
     -webkit-transform: translate(-1000px, 0);
     transform: translate(-1000px, 0);
   }
@@ -443,6 +456,11 @@ p.description {
   nav ul.open {
     -webkit-transform: translate(0, 0);
     transform: translate(0, 0);
+    width: 100%;
+    min-height: 100%;
+    right: 0;
+    top: 0;
+    display: block;
   }
 
 

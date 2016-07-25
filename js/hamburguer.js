@@ -4,10 +4,12 @@
 var menu = document.querySelector('#hamburguer');
 var main = document.querySelector('header');
 var drawer = document.querySelector('nav ul');
+var closeIcon = document.querySelector('#close-menu');
 
 menu.addEventListener('click', function(e) {
   drawer.classList.toggle('open');
   e.stopPropagation();
+
 });
 main.addEventListener('click', function() {
   drawer.classList.remove('open');
