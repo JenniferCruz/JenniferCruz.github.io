@@ -47,6 +47,16 @@ body {
 }
 
 
+h4 {
+    margin: 10px 0;
+}
+a {
+    color: gainsboro;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+
 /* Navigation menu */
 i.fa.fa-bars {
   font-size: 2em;
@@ -257,9 +267,7 @@ h3.right-h3 {
 }
 
 /* */
-h4 {
-    margin: 10px 0;
-}
+
 .date-text {
     font-size: 0.8em;
 }
@@ -271,11 +279,49 @@ p.description {
     padding-left: 5px;
 }
 
-a {
-    color: gainsboro;
-    text-decoration: none;
-    font-size: 0.9em;
+/* project galleries styes */
+.project-gallery {
+  /*width: 800px;*/
+  /*margin-left: auto;*/
+  /*background-color: lightpink;*/
+  /*margin-right: auto;*/
+  text-align: center;
+  display: flex;
+  align-items: center;
 }
+
+.image-set img {
+  max-width: 100%;
+}
+
+.arrow {
+  margin: 0;
+  padding: 0;
+  width: 10%;
+  /*display: inline;*/
+  font-size: 50px;
+}
+
+.unabled {
+  color: gray;
+  font-weight: bolder;
+}
+
+.abled {
+  cursor: pointer;
+  color: #fff;
+}
+
+.image-set {
+  display: inline;
+  width: 80%;
+}
+
+.img-hidden {
+  display: none;
+}
+
+
 
 /* Media queries */
 @media screen and (max-width: 1300px) {

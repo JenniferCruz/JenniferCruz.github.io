@@ -50,7 +50,23 @@ var HTMLprojectDates = '<div class="date-text"><i class="fa fa-calendar" aria-hi
 var HTMLprojectDescription = '<p>%data%</p>';
 var HTMLprojectName = '<h3>%data%</h3>';
 var HTMLprojectGallery = '<div class="project-gallery"></div>'
-var HTMLprojectImage = '<img src="%data%" class="project-img">';
+
+var HTMLprojectGallery = '<div class="project-gallery"></div>';
+var HTMLprojectGalleryLeft = '<div class="left arrow unabled"><i class="fa fa-arrow-circle-o-left" aria-hidden="true"></i></div>';
+var HTMLprojectGalleryImgSet = '<div class="image-set"></div>';
+var HTMLprojectImgVisible = '<img src="%ulr-to-img%" alt="%alt%" class="gallery-img"/>';
+var HTMLprojectImgHidden = '<img src="%ulr-to-img%" alt="%alt%" class="gallery-img img-hidden"/>';
+var HTMLprojectGalleryRight = '<div class="right arrow abled"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></div>';
+
+
+
+
+
+
+
+
+
+
 //
 var HTMLeducationTitle = '<div class="title"><h2>Education</h2></div>';
 var HTMLeducationContent = '<div id="ed-content" class="line content flex-box"></div>';
