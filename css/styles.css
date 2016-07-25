@@ -89,6 +89,14 @@ nav a {
   display: none;
 }
 
+.highlight-menu {
+  background-image: url("../img/tri.png");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: contain;
+}
+
+
 /* Header intro */
 header {
   width: 91%;
@@ -429,6 +437,10 @@ p.description {
 
   .open-icon {
     display: block;
+  }
+
+  .highlight-menu {
+    background-image: none;
   }
 
   nav li {
