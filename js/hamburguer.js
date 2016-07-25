@@ -1,8 +1,8 @@
 /*
- * Open the drawer when the menu ison is clicked.
+ * Open the drawer when the menu icon is clicked.
  */
 var menu = document.querySelector('#hamburguer');
-var main = document.querySelector('main');
+var main = document.querySelector('header');
 var drawer = document.querySelector('nav ul');
 
 menu.addEventListener('click', function(e) {

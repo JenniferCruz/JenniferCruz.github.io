@@ -47,16 +47,15 @@ var HTMLprojectTitle = '<div class="title"><h2>Projects</h2></div>';
 var HTMLprojectsContent = '<div id="projects-content" class="line content flex-box"></div>';
 var HTMLprojectBucket = '<div class="flex-block project-entry"></div>';
 var HTMLprojectDates = '<div class="date-text"><i class="fa fa-calendar" aria-hidden="true"></i> %data%</div>';
-var HTMLprojectDescription = '<p>%data%</p>';
-var HTMLprojectName = '<h3>%data%</h3>';
-var HTMLprojectGallery = '<div class="project-gallery"></div>'
+var HTMLprojectDescription = '<p class="description">%data%</p>';
+var HTMLprojectName = '<h3 >%data%</h3>';
 
 var HTMLprojectGallery = '<div class="project-gallery"></div>';
-var HTMLprojectGalleryLeft = '<div class="left arrow unabled"><i class="fa fa-arrow-circle-o-left" aria-hidden="true"></i></div>';
+var HTMLprojectGalleryLeft = '<div class="left arrow unabled"><</div>';
 var HTMLprojectGalleryImgSet = '<div class="image-set"></div>';
 var HTMLprojectImgVisible = '<img src="%ulr-to-img%" alt="%alt%" class="gallery-img"/>';
 var HTMLprojectImgHidden = '<img src="%ulr-to-img%" alt="%alt%" class="gallery-img img-hidden"/>';
-var HTMLprojectGalleryRight = '<div class="right arrow abled"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></div>';
+var HTMLprojectGalleryRight = '<div class="right arrow abled">></div>';
 
 
 

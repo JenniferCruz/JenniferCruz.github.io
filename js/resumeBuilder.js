@@ -97,6 +97,7 @@ var bio = {
      for(var i=0; i<this.projects.length; i++){
        $("#projects-content").append(HTMLprojectBucket);
        $(".project-entry:last").append(HTMLprojectName.replace("%data%", this.projects[i].title));
+       $(".project-entry:last").append(HTMLprojectDates.replace("%data%", this.projects[i].dates));
 
        $(".project-entry:last").append(HTMLprojectGallery);
        $(".project-gallery:last").append(HTMLprojectGalleryLeft);
@@ -110,7 +111,6 @@ var bio = {
         }
         $(".project-gallery:last").append(HTMLprojectGalleryRight);
 
-       $(".project-entry:last").append(HTMLprojectDates.replace("%data%", this.projects[i].dates));
        $(".project-entry:last").append(HTMLprojectDescription.replace("%data%", this.projects[i].description));
      }
    }
