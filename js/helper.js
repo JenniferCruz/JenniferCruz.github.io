@@ -61,54 +61,15 @@ var HTMLschoolDates = '<div class="date-text"><i class="fa fa-calendar" aria-hid
 var HTMLschoolLocation = '<div class="location-text"><i class="fa fa-map-marker" aria-hidden="true"></i>  %data%</div>';
 var HTMLschoolURL = '<a href="linkTo">%data%</a>';
 
-// var HTMLonlineClasses = '<h3>Online Classes</h3>';
 var HTMLonlineTitle = '<h3>%data%</h3>';
 var HTMLonlineSchool = '<h4>%data%</h4>';
 var HTMLonlineDates = '<div class="date-text"><i class="fa fa-calendar" aria-hidden="true"></i> %data%</div>';
 var HTMLonlineURL = '<a href="linkTo">%data%</a>';
 
-var HTMLimgBucket = '<div class="flex-block cool-img"></div>';
+var HTMLimgBucket = '<div class="flex-block cool-img"></div>'; // for generic or decorative images
 
-//
-/*
-The International Name challenge in Lesson 2
-where you'll create a function that will need this helper code to run.
-Don't delete! It hooks up your code to the button you'll be appending.
-*/
-$(document).ready(function() {
-  $('button').click(function() {
-    var $name = $('#name');
-    var iName = inName($name.text()) || function(){};
-    $name.html(iName);
-  });
-});
-
-/*
-The next few lines about clicks are for
-the Collecting Click Locations quiz in Lesson 2.
-*/
-var clickLocations = [];
-
-function logClicks(x,y) {
-  clickLocations.push(
-    {
-      x: x,
-      y: y
-    }
-  );
-  console.log('x location: ' + x + '; y location: ' + y);
-}
-
-$(document).click(function(loc) {
-  // your code goes here!
-});
-
-
-
-
-var internationalizeButton = '<button>Internationalize</button>';
 var googleMap = '<div id="map"></div>';
-//
+
 
 
 /*
@@ -117,7 +78,6 @@ See the documentation below for more details.
 https://developers.google.com/maps/documentation/javascript/reference
 */
 var map;    // declares a global map variable
-
 
 /*
 Start here! initializeMap() is called when page is loaded.
