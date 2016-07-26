@@ -87,7 +87,7 @@ var bio = {
        "title" : "Bootstrap Framework",
        "dates": "06-2016",
        "description": "Responsive website developed using Bootstrap",
-       "images": ["img/a.jpg", "img/b.jpg"]
+       "images": ["img/d.png", "img/b.png", "img/c.png", "img/a.jpg", "img/b.jpg"]
      }
    ],
    "display": function(){
@@ -278,3 +278,6 @@ bio.display();
 projects.display();
 work.display();
 education.display();
+
+
+$("#mapDiv").append(googleMap);

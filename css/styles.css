@@ -89,11 +89,22 @@ nav a {
   display: none;
 }
 
-.highlight-menu {
-  background-image: url("../img/tri.png");
-  background-repeat: no-repeat;
-  background-position: 50%;
-  background-size: contain;
+
+/*.blah {*/
+/*.highlight-menu {*/
+  /*background-image: url("../img/tri.png");*/
+  /*background-repeat: no-repeat;*/
+  /*background-position: 50%;*/
+  /*background-size: contain;*/
+/*}*/
+
+
+.highlight-menu img {
+  display: grid;
+    top: 0;
+    width: 60px;
+    position: absolute;
+    z-index: -10;
 }
 
 
