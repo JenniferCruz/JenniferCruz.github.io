@@ -5,7 +5,7 @@ var HTMLbioPic = '<img src="%data%" class="biopic" alt="Jennifer\'s headshot">';
 var HTMLheaderRole = '<h2 class="role">%data%</h2>';
 var HTMLheaderName = '<div><h1 class="name">%data%</h1><div>';
 
-var HTMLPersonalSectionTitle = '<div class="title"><h2>Personal</h2></div>';
+var HTMLPersonalSectionTitle = '<div class="section-title"><h2>Personal</h2></div>';
 var HTMLPersonalContent = '<div id="personal-content" class="line content flex-box"></div>';
 var HTMLabout = '<div id="about-me" class="flex-block violet"></div>';
 var HTMLaboutTitle = '<h3 class="right-h3">%data%</h3>';
@@ -22,12 +22,12 @@ var HTMLemail = '<li><i class="fa fa-envelope fa-icon" aria-hidden="true"></i> %
 var HTMLtwitter = '<li><i class="fa fa-twitter fa-icon" aria-hidden="true"></i> %data%</li>';
 var HTMLgithub = '<li><i class="fa fa-github-alt fa-icon" aria-hidden="true"></i> %data%</li>';
 var HTMLlocation = '<li><i class="fa fa-location-arrow fa-icon" aria-hidden="true"></i> %data%</li>';
-var HTMLSkillsTitle = '<div class="title"><h2>Skills</h2></div>';
+var HTMLSkillsTitle = '<div class="section-title"><h2>Skills</h2></div>';
 var HTMLSkillsContent = '<div id="skills-content" class="line content flex-box"></div>';
 var HTMLSkillTextBucket = '<div class="flex-block skill standout">%data%</div>';
 var HTMLSkillImgBucket = '<div class="flex-block skill img-clip-logo"><img src="%image%" alt="logo" /></div>';
 
-var HTMLworkTitle = '<div class="title"><h2>Work Experience</h2></div>';
+var HTMLworkTitle = '<div class="section-title"><h2>Work Experience</h2></div>';
 var HTMLworkContent = '<div id="work-content" class="line content flex-box"></div>';
 var HTMLworkBucket = '<div class="flex-block work-entry"></div>';
 var HTMLworkEmployer = '<h3>%data%</h3>';
@@ -36,7 +36,7 @@ var HTMLjobTitle = '<h4><i class="fa fa-female" aria-hidden="true"></i> %data%</
 var HTMLworkLocation = '<div class="location-text"><i class="fa fa-map-marker" aria-hidden="true"></i> %data%</div>';
 var HTMLworkDescription = '<p class="description">%data%</p>';
 
-var HTMLprojectTitle = '<div class="title"><h2>Projects</h2></div>';
+var HTMLprojectTitle = '<div class="section-title"><h2>Projects</h2></div>';
 var HTMLprojectsContent = '<div id="projects-content" class="line content flex-box"></div>';
 var HTMLprojectBucket = '<div class="flex-block project-entry"></div>';
 var HTMLprojectDates = '<div class="date-text"><i class="fa fa-calendar" aria-hidden="true"></i> %data%</div>';
@@ -50,7 +50,7 @@ var HTMLprojectImgVisible = '<img src="%ulr-to-img%" alt="personal project image
 var HTMLprojectImgHidden = '<img src="%ulr-to-img%" alt="personal project image" class="gallery-img img-hidden">';
 var HTMLprojectGalleryRight = '<div class="right arrow abled">></div>';
 
-var HTMLeducationTitle = '<div class="title"><h2>Education</h2></div>';
+var HTMLeducationTitle = '<div class="section-title"><h2>Education</h2></div>';
 var HTMLeducationContent = '<div id="ed-content" class="line content flex-box"></div>';
 var HTMLedBucket = '<div class="flex-block ed-entry"></div>';
 
