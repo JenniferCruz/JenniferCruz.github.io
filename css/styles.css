@@ -31,7 +31,7 @@ a {
 }
 
 
-.flex-block {
+.flex-item {
   width: 42%;
   padding: 15px;
   margin: 8px;
@@ -69,14 +69,14 @@ h3.right-h3 {
 }
 
 
-.flex-block h3 {
+.flex-item h3 {
   margin: 0;
   text-transform: uppercase;
   font-weight: 100;
 }
 
 
-.flex-block img {
+.flex-item img {
   width: 100%;
 }
 
@@ -381,7 +381,7 @@ header {
   }
 
 
-  .flex-block {
+  .flex-item {
     width: 42%;
   }
 
@@ -416,7 +416,7 @@ header {
 
 
 @media only screen and (max-width: 620px) {
-  .flex-block {
+  .flex-item {
     width: 90%;
   }
 
@@ -467,6 +467,13 @@ header {
     font-size: 1.2em;
   }
 
+  .highlight-menu img {
+    display: none;
+  }
+
+  .closing-icon {
+    display: list-item;;
+  }
 
   nav li {
     display: list-item;

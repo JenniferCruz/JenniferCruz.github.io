@@ -7,41 +7,41 @@ var HTMLheaderName = '<div><h1 class="name">%data%</h1><div>';
 
 var HTMLPersonalSectionTitle = '<div class="section-title"><h2>Personal</h2></div>';
 var HTMLPersonalContent = '<div id="personal-content" class="line content flex-box"></div>';
-var HTMLabout = '<div id="about-me" class="flex-block violet"></div>';
+var HTMLabout = '<div id="about-me" class="flex-item violet"></div>';
 var HTMLaboutTitle = '<h3 class="right-h3">%data%</h3>';
 var HTMLwelcomeMsg = '<p>%data%</p>';
-var HTMLBucketPhrase = '<div id="decor-phrase" class="flex-block clip-phrase bright-orange"></div>';
-var HTMLBucketPicPersonal = '<div id="decor-pic" class="flex-block green img-clip"></div>';
+var HTMLBucketPhrase = '<div id="decor-phrase" class="flex-item clip-phrase bright-orange"></div>';
+var HTMLBucketPicPersonal = '<div id="decor-pic" class="flex-item green img-clip"></div>';
 var HTMLBucketPic = '<img src="img/love.jpg" alt="Decorative image">';
 var HTMLDecorPhrase = '<p>%data%</p>';
-var HTMLBucketContact = '<div id="contact" class="flex-block contact-section mustard"></div>';
+var HTMLBucketContact = '<div id="contact" class="flex-item contact-section mustard personal"></div>';
 var HTMLBucketContactTitle = '<h3 class="right-h3">%data%</h3>';
 var HTMLContactList = '<ul id="contact-list"></ul>';
-var HTMLmobile = '<li><i class="fa fa-phone fa-icon" aria-hidden="true"></i> %data%</li>';
-var HTMLemail = '<li><i class="fa fa-envelope fa-icon" aria-hidden="true"></i> %data%</li>';
-var HTMLtwitter = '<li><i class="fa fa-twitter fa-icon" aria-hidden="true"></i> %data%</li>';
-var HTMLgithub = '<li><i class="fa fa-github-alt fa-icon" aria-hidden="true"></i> %data%</li>';
-var HTMLlocation = '<li><i class="fa fa-location-arrow fa-icon" aria-hidden="true"></i> %data%</li>';
+var HTMLmobile = '<li class="personal"><i class="fa fa-phone fa-icon" aria-hidden="true"></i> %data%</li>';
+var HTMLemail = '<li class="personal"><i class="fa fa-envelope fa-icon" aria-hidden="true"></i> %data%</li>';
+var HTMLtwitter = '<li class="personal"><i class="fa fa-twitter fa-icon" aria-hidden="true"></i> %data%</li>';
+var HTMLgithub = '<li class="personal"><i class="fa fa-github-alt fa-icon" aria-hidden="true"></i> %data%</li>';
+var HTMLlocation = '<li class="personal"><i class="fa fa-location-arrow fa-icon" aria-hidden="true"></i> %data%</li>';
 var HTMLSkillsTitle = '<div class="section-title"><h2>Skills</h2></div>';
 var HTMLSkillsContent = '<div id="skills-content" class="line content flex-box"></div>';
-var HTMLSkillTextBucket = '<div class="flex-block skill standout">%data%</div>';
-var HTMLSkillImgBucket = '<div class="flex-block skill img-clip-logo"><img src="%image%" alt="logo" /></div>';
+var HTMLSkillTextBucket = '<div class="flex-item skill standout">%data%</div>';
+var HTMLSkillImgBucket = '<div class="flex-item skill img-clip-logo"><img src="%image%" alt="logo" /></div>';
 
 var HTMLworkTitle = '<div class="section-title"><h2>Work Experience</h2></div>';
 var HTMLworkContent = '<div id="work-content" class="line content flex-box"></div>';
-var HTMLworkBucket = '<div class="flex-block work-entry"></div>';
-var HTMLworkEmployer = '<h3>%data%</h3>';
-var HTMLworkDates = '<div class="date-text"><i class="fa fa-calendar" aria-hidden="true"></i> %data%</div>';
-var HTMLjobTitle = '<h4><i class="fa fa-female" aria-hidden="true"></i> %data%</h4>';
-var HTMLworkLocation = '<div class="location-text"><i class="fa fa-map-marker" aria-hidden="true"></i> %data%</div>';
-var HTMLworkDescription = '<p class="description">%data%</p>';
+var HTMLworkBucket = '<div class="flex-item work-entry"></div>';
+var HTMLworkEmployer = '<h3 class="work-details">%data%</h3>';
+var HTMLworkDates = '<div class="date-text work-details"><i class="fa fa-calendar" aria-hidden="true"></i> %data%</div>';
+var HTMLjobTitle = '<h4 class="work-details"><i class="fa fa-female" aria-hidden="true"></i> %data%</h4>';
+var HTMLworkLocation = '<div class="location-text work-details"><i class="fa fa-map-marker" aria-hidden="true"></i> %data%</div>';
+var HTMLworkDescription = '<p class="description work-details">%data%</p>';
 
 var HTMLprojectTitle = '<div class="section-title"><h2>Projects</h2></div>';
-var HTMLprojectsContent = '<div id="projects-content" class="line content flex-box"></div>';
-var HTMLprojectBucket = '<div class="flex-block project-entry"></div>';
-var HTMLprojectDates = '<div class="date-text"><i class="fa fa-calendar" aria-hidden="true"></i> %data%</div>';
-var HTMLprojectDescription = '<p class="description">%data%</p>';
-var HTMLprojectName = '<h3 >%data%</h3>';
+var HTMLprojectsContent = '<div id="projects-content" class="line content flex-box project-details"></div>';
+var HTMLprojectBucket = '<div class="flex-item project-entry "></div>';
+var HTMLprojectDates = '<div class="date-text project-details"><i class="fa fa-calendar" aria-hidden="true"></i> %data%</div>';
+var HTMLprojectDescription = '<p class="description project-details">%data%</p>';
+var HTMLprojectName = '<h3 class="project-details">%data%</h3>';
 
 var HTMLprojectGallery = '<div class="project-gallery"></div>';
 var HTMLprojectGalleryLeft = '<div class="left arrow unabled"><</div>';
@@ -52,21 +52,21 @@ var HTMLprojectGalleryRight = '<div class="right arrow abled">></div>';
 
 var HTMLeducationTitle = '<div class="section-title"><h2>Education</h2></div>';
 var HTMLeducationContent = '<div id="ed-content" class="line content flex-box"></div>';
-var HTMLedBucket = '<div class="flex-block ed-entry"></div>';
+var HTMLedBucket = '<div class="flex-item ed-entry"></div>';
 
 var HTMLschoolMajor = '<h3></h3>';
-var HTMLschoolDegree = '<h3>%data%</h3>';
-var HTMLschoolName = '<h4>%data%</h4>';
-var HTMLschoolDates = '<div class="date-text"><i class="fa fa-calendar" aria-hidden="true"></i> %data%</div>';
-var HTMLschoolLocation = '<div class="location-text"><i class="fa fa-map-marker" aria-hidden="true"></i>  %data%</div>';
+var HTMLschoolDegree = '<h3 class="education-entry">%data%</h3>';
+var HTMLschoolName = '<h4 class="education-entry">%data%</h4>';
+var HTMLschoolDates = '<div class="date-text education-entry"><i class="fa fa-calendar" aria-hidden="true"></i> %data%</div>';
+var HTMLschoolLocation = '<div class="location-text education-entry"><i class="fa fa-map-marker" aria-hidden="true"></i>  %data%</div>';
 var HTMLschoolURL = '<a href="linkTo">%data%</a>';
 
-var HTMLonlineTitle = '<h3>%data%</h3>';
-var HTMLonlineSchool = '<h4>%data%</h4>';
-var HTMLonlineDates = '<div class="date-text"><i class="fa fa-calendar" aria-hidden="true"></i> %data%</div>';
+var HTMLonlineTitle = '<h3 class="education-entry">%data%</h3>';
+var HTMLonlineSchool = '<h4 class="education-entry">%data%</h4>';
+var HTMLonlineDates = '<div class="date-text education-entry"><i class="fa fa-calendar" aria-hidden="true"></i> %data%</div>';
 var HTMLonlineURL = '<a href="linkTo">%data%</a>';
 
-var HTMLimgBucket = '<div class="flex-block cool-img"></div>'; // for generic or decorative images
+var HTMLimgBucket = '<div class="flex-item cool-img"></div>'; // for generic or decorative images
 
 var googleMap = '<div id="map"></div>';
 
