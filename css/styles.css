@@ -140,6 +140,7 @@ nav a {
 .h-intro {
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 
@@ -448,7 +449,7 @@ header {
 
   .biopic {
     width: 60%;
-    margin: 0 100%;
+    margin: 0 70px;
   }
 
 
