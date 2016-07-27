@@ -12,7 +12,7 @@ var HTMLaboutTitle = '<h3 class="right-h3">%data%</h3>';
 var HTMLwelcomeMsg = '<p>%data%</p>';
 var HTMLBucketPhrase = '<div id="decor-phrase" class="flex-item clip-phrase bright-orange"></div>';
 var HTMLBucketPicPersonal = '<div id="decor-pic" class="flex-item green img-clip"></div>';
-var HTMLBucketPic = '<img src="img/love.jpg" alt="Decorative image">';
+var HTMLBucketPic = '<img src="img/cool0.jpg" alt="Decorative image">';
 var HTMLDecorPhrase = '<p>%data%</p>';
 var HTMLBucketContact = '<div id="contact" class="flex-item contact-section mustard personal"></div>';
 var HTMLBucketContactTitle = '<h3 class="right-h3">%data%</h3>';

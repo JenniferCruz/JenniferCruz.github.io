@@ -12,7 +12,10 @@ var bio = {
      'twitter': '@j3nniCruz',
      'location': 'Dallas, TX'
    },
-   'welcomeMessage': 'Hi! I am a developer and I am looking for a job with a talented team :-)',
+   'welcomeMessage': 'I\'ve been working for a couple of years alongside web developers. '+
+      'Managing communication and trying to make sure everybody has a good understanding of '+
+      'a project\'s goal is a cool thing. But, being fascinated by the potential in programming, '+
+      'I wanted to get my hands dirty.',
    'skills': [
      'python',
      'html',
@@ -39,7 +42,9 @@ var bio = {
      $('#about-me').append(HTMLaboutTitle.replace('%data%', 'Who am I?'));
      $('#about-me').append(HTMLwelcomeMsg.replace('%data%', this.welcomeMessage));
      $('#personal-content').append(HTMLBucketPhrase);
-     $('#decor-phrase').append(HTMLDecorPhrase.replace('%data%', 'Cool phrase goes here'));
+     $('#decor-phrase').append(HTMLDecorPhrase.replace('%data%', 'Any fool can write code '+
+        'that a computer can understand. Good programmers write code that humans can understand. '+
+        'Martin Fowler. '));
      $('#personal-content').append(HTMLBucketPicPersonal);
      $('#decor-pic').append(HTMLBucketPic);
      $('#personal-content').append(HTMLBucketContact);
@@ -62,15 +67,14 @@ var bio = {
  var bioHelper = {
    // skillpics property to support bio skill section
    'skillpics': [
-     './img/python-logo.png',
-     './img/java-logo.png',
-     './img/javascript-logo.png',
-     './img/html5-logo.png',
-     './img/css-logo.png',
-     './img/grunt-logo.png',
-     './img/css-logo.png',
+     './img/logo-python.png',
+     './img/logo-java.png',
+     './img/logo-javascript.png',
+     './img/logo-html5.png',
+     './img/logo-css.png',
+     './img/logo-grunt.png',
      'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/English_language.svg/800px-English_language.svg.png',
-     './img/spanish.gif',
+     './img/logo-spanish.gif',
      'https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Italy.svg/512px-Flag_of_Italy.svg.png#italian'
    ],
    // Helper function to display role as per design
@@ -101,13 +105,13 @@ var bio = {
        'title': 'Grid layout framework',
        'dates': '05-2016',
        'description': 'Responsive website developed using own implementation of a grid layout system.',
-       'images': ['img/a.jpg', 'img/b.jpg']
+       'images': ['img/grid_1.jpg', 'img/grid_2.jpg', 'img/grid_3.jpg', 'img/grid_4.jpg']
      },
      {
        'title': 'Bootstrap Framework',
        'dates': '06-2016',
        'description': 'Responsive website developed using Bootstrap',
-       'images': ['img/d.png', 'img/b.png', 'img/c.png', 'img/a.jpg', 'img/b.jpg']
+       'images': ['img/boots_1.jpg', 'img/boots_2.jpg']
      }
    ],
    'display': function(){
@@ -141,49 +145,71 @@ var bio = {
        'title': 'Business Analyst',
        'location': 'Bogota, Colombia',
        'dates': '2015-2016',
-       'description': 'lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum description goes here'
+       'description': 'As businesss analyst I had to manage communication with the clients, '+
+          'identify their needs and work alongside the development team '+
+          'to make sure projects were delivered as expected. '
      },
      {
        'employer': 'THINK creative group',
        'title': 'Quality Assurance',
        'location': '(Online)',
        'dates': '2014-2015',
-       'description': 'lorem ipsum description goes here'
+       'description': 'Main responsabilities included gathering information and communicating '+
+          'requirements to internal and remote teams, and making sure the projects were developed '+
+          'in accordance with the requirements and expectations.'
      },
      {
        'employer': 'Akendos',
        'title': 'Project Manager',
        'location': 'Cartagena, Colombia',
        'dates': '2013-2014',
-       'description': 'lorem ipsum description goes here'
+       'description': 'Among the many task of the role, I had to manage communication '+
+          'with the clients to understand their software needs and expectations, '+
+          'create user stories for the technical teams and make sure they understood the requirements, '+
+          'using images, diagrams and other tools, '+
+          'working with both the technical team and the client as per Agile methodologies.'
      },
      {
        'employer': 'Universidad Tecnológica de Bolívar',
        'title': 'Web marketing consultant for APPS.CO entrepreneurships',
        'location': 'Cartagena, Colombia',
        'dates': '2012-2013',
-       'description': 'lorem ipsum description goes here'
+       'description': 'As consultant for tech entrepreneurs in Colombia, '+
+          'I had to hold meeting with entrepreneurs on demand, to introduce them to platforms, '+
+          'resources and techniques to develop their communication programs. '+
+          'Additionally, I had to prepare and give lectures on related topics.'
      },
      {
        'employer': 'THINK creative group',
        'title': 'Web Projects Coordinator',
        'location': '(Online)',
        'dates': '2010-2012',
-       'description': 'lorem ipsum description goes here'
+       'description': 'Being involved in the many stages of the web development process, '+
+          'I had to assist in identifying our clients\' needs, '+
+          'manage communication with the development team and check '+
+          'the projects were developed in accordance with the requirements'
      },
      {
        'employer': 'AIESEC Dominican republic',
        'title': 'Member Committee President',
        'location': 'Santo Domingo, Dominican Republic',
        'dates': '2009-2010',
-       'description': 'lorem ipsum description goes here'
+       'description': 'Being accountable for the performance of the organization included '+
+          'looking over our financial performance, '+
+          'coordinating two local committees in different cities, '+
+          'staying in touch with the various stakeholders, '+
+          'organizing conferences and projects consistent with the mission, '+
+          'vision and values​​ of the organization, and providing feedback to all team members and the team as a whole.'
      },
      {
        'employer': 'Iberocamerican University',
        'title': 'Italian Teacher',
        'location': 'Santo Domingo, Dominican Republic',
        'dates': '2008-2010',
-       'description': 'lorem ipsum description goes here'
+       'description': 'As a teacher, I was responsible for planning ' +
+          'and conducting classes on a weekly basis, developing support ' +
+          'material for the course and content for a virtual classroom, ' +
+          'and assessing students\' performance.'
      }
    ],
    'display': function(){
