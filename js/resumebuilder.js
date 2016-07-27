@@ -31,35 +31,41 @@ var bio = {
    'display': function(){
      // Render header
      var role_split = bioHelper.split_role();
-     $('#header-intro').append(HTMLheaderRole.replace('%data%', role_split[0]));
-     $('#header-intro').append(HTMLbioPic.replace('%data%', this.biopic));
-     $('#header-intro').append(HTMLheaderRole.replace('%data%', role_split[1]));
-     $('header').append(HTMLheaderName.replace('%data%', this.name));
+     if(this.biopic && this.role && this.name){
+       $('#header-intro').append(HTMLheaderRole.replace('%data%', role_split[0]));
+       $('#header-intro').append(HTMLbioPic.replace('%data%', this.biopic));
+       $('#header-intro').append(HTMLheaderRole.replace('%data%', role_split[1]));
+       $('header').append(HTMLheaderName.replace('%data%', this.name));
+     }
      // Render personal information section
-     $('#personal-section').prepend(HTMLPersonalSectionTitle);
-     $('#personal-section').append(HTMLPersonalContent);
-     $('#personal-content').append(HTMLabout);
-     $('#about-me').append(HTMLaboutTitle.replace('%data%', 'Who am I?'));
-     $('#about-me').append(HTMLwelcomeMsg.replace('%data%', this.welcomeMessage));
-     $('#personal-content').append(HTMLBucketPhrase);
-     $('#decor-phrase').append(HTMLDecorPhrase.replace('%data%', 'Any fool can write code '+
-        'that a computer can understand. Good programmers write code that humans can understand. '+
-        'Martin Fowler. '));
-     $('#personal-content').append(HTMLBucketPicPersonal);
-     $('#decor-pic').append(HTMLBucketPic);
-     $('#personal-content').append(HTMLBucketContact);
-     $('#contact').append(HTMLBucketContactTitle.replace('%data%', 'Contact'));
-     $('#contact').append(HTMLContactList);
-     $('#contact-list').append(HTMLmobile.replace('%data%', this.contacts.mobile));
-     $('#contact-list').append(HTMLemail.replace('%data%', this.contacts.email));
-     $('#contact-list').append(HTMLlocation.replace('%data%', this.contacts.location));
-     $('#contact-list').append(HTMLgithub.replace('%data%', this.contacts.github));
-     $('#contact-list').append(HTMLtwitter.replace('%data%', this.contacts.twitter));
+     if(this.contacts){
+       $('#personal-section').prepend(HTMLPersonalSectionTitle);
+       $('#personal-section').append(HTMLPersonalContent);
+       $('#personal-content').append(HTMLabout);
+       $('#about-me').append(HTMLaboutTitle.replace('%data%', 'Who am I?'));
+       $('#about-me').append(HTMLwelcomeMsg.replace('%data%', this.welcomeMessage));
+       $('#personal-content').append(HTMLBucketPhrase);
+       $('#decor-phrase').append(HTMLDecorPhrase.replace('%data%', 'Any fool can write code '+
+       'that a computer can understand. Good programmers write code that humans can understand. '+
+       'Martin Fowler. '));
+       $('#personal-content').append(HTMLBucketPicPersonal);
+       $('#decor-pic').append(HTMLBucketPic);
+       $('#personal-content').append(HTMLBucketContact);
+       $('#contact').append(HTMLBucketContactTitle.replace('%data%', 'Contact'));
+       $('#contact').append(HTMLContactList);
+       $('#contact-list').append(HTMLmobile.replace('%data%', this.contacts.mobile));
+       $('#contact-list').append(HTMLemail.replace('%data%', this.contacts.email));
+       $('#contact-list').append(HTMLlocation.replace('%data%', this.contacts.location));
+       $('#contact-list').append(HTMLgithub.replace('%data%', this.contacts.github));
+       $('#contact-list').append(HTMLtwitter.replace('%data%', this.contacts.twitter));
+     }
      // Render skills section
-     $('#skills').prepend(HTMLSkillsTitle);
-     $('#skills').append(HTMLSkillsContent);
-     for(var i=0; i<this.skills.length; i++){
-       $('#skills-content').append(bioHelper.format_skill(this.skills[i]));
+     if(this.skills){
+       $('#skills').prepend(HTMLSkillsTitle);
+       $('#skills').append(HTMLSkillsContent);
+       for(var i=0; i<this.skills.length; i++){
+         $('#skills-content').append(bioHelper.format_skill(this.skills[i]));
+       }
      }
    }
  }
@@ -79,11 +85,13 @@ var bio = {
    ],
    // Helper function to display role as per design
    'split_role': function(){
-     var role_array = bio.role.split(' ');
-     var mid_point = Math.floor(role_array.length / 2);
-     var first = role_array.splice(0, mid_point).toString();
-     var last = role_array.toString();
-     return [first, last];
+     if(bio.role){
+       var role_array = bio.role.split(' ');
+       var mid_point = Math.floor(role_array.length / 2);
+       var first = role_array.splice(0, mid_point).toString();
+       var last = role_array.toString();
+       return [first, last];
+     }
    },
    // Helper function to display an image for each skill, if an image is available
    'format_skill': function(word){
@@ -117,23 +125,25 @@ var bio = {
    'display': function(){
      $('#projects').append(HTMLprojectTitle);
      $('#projects').append(HTMLprojectsContent);
-     for(var i=0; i<this.projects.length; i++){
-       $('#projects-content').append(HTMLprojectBucket);
-       $('.project-entry:last').append(HTMLprojectName.replace('%data%', this.projects[i].title));
-       $('.project-entry:last').append(HTMLprojectDates.replace('%data%', this.projects[i].dates));
-       $('.project-entry:last').append(HTMLprojectGallery);
-       $('.project-gallery:last').append(HTMLprojectGalleryLeft);
-       $('.project-gallery:last').append(HTMLprojectGalleryImgSet);
-       for(var j=0; j<this.projects[i].images.length; j++){
-         // Use if/else instead of ternary expression because content within brackets is too long
-         if(j === 0){
-           $('.image-set:last').append(HTMLprojectImgVisible.replace('%ulr-to-img%', this.projects[i].images[j]));
-         } else {
-           $('.image-set:last').append(HTMLprojectImgHidden.replace('%ulr-to-img%', this.projects[i].images[j]));
+     if(this.projects){
+       for(var i=0; i<this.projects.length; i++){
+         $('#projects-content').append(HTMLprojectBucket);
+         $('.project-entry:last').append(HTMLprojectName.replace('%data%', this.projects[i].title));
+         $('.project-entry:last').append(HTMLprojectDates.replace('%data%', this.projects[i].dates));
+         $('.project-entry:last').append(HTMLprojectGallery);
+         $('.project-gallery:last').append(HTMLprojectGalleryLeft);
+         $('.project-gallery:last').append(HTMLprojectGalleryImgSet);
+         for(var j=0; j<this.projects[i].images.length; j++){
+           // Use if/else instead of ternary expression because content within brackets is too long
+           if(j === 0){
+             $('.image-set:last').append(HTMLprojectImgVisible.replace('%ulr-to-img%', this.projects[i].images[j]));
+           } else {
+             $('.image-set:last').append(HTMLprojectImgHidden.replace('%ulr-to-img%', this.projects[i].images[j]));
+           }
          }
+         $('.project-gallery:last').append(HTMLprojectGalleryRight);
+         $('.project-entry:last').append(HTMLprojectDescription.replace('%data%', this.projects[i].description));
        }
-       $('.project-gallery:last').append(HTMLprojectGalleryRight);
-       $('.project-entry:last').append(HTMLprojectDescription.replace('%data%', this.projects[i].description));
      }
    }
  }
@@ -215,14 +225,16 @@ var bio = {
    'display': function(){
      $('#work-experience').append(HTMLworkTitle);
      $('#work-experience').append(HTMLworkContent);
-     for(var i=0; i<this.jobs.length; i++){
-       $('#work-content').append(HTMLworkBucket);
-       $('.work-entry:last').append(HTMLworkEmployer.replace('%data%', this.jobs[i].employer));
-       $('.work-entry:last').append(HTMLworkDates.replace('%data%', this.jobs[i].dates));
-       $('.work-entry:last').append(HTMLjobTitle.replace('%data%', this.jobs[i].title));
-       $('.work-entry:last').append(HTMLworkLocation.replace('%data%', this.jobs[i].location));
-       $('.work-entry:last').append(HTMLworkDescription.replace('%data%', this.jobs[i].description));
-       checkToInsertCoolPic(i, '#work-content');
+     if(this.jobs){
+       for(var i=0; i<this.jobs.length; i++){
+         $('#work-content').append(HTMLworkBucket);
+         $('.work-entry:last').append(HTMLworkEmployer.replace('%data%', this.jobs[i].employer));
+         $('.work-entry:last').append(HTMLworkDates.replace('%data%', this.jobs[i].dates));
+         $('.work-entry:last').append(HTMLjobTitle.replace('%data%', this.jobs[i].title));
+         $('.work-entry:last').append(HTMLworkLocation.replace('%data%', this.jobs[i].location));
+         $('.work-entry:last').append(HTMLworkDescription.replace('%data%', this.jobs[i].description));
+         checkToInsertCoolPic(i, '#work-content');
+       }
      }
    }
  }
@@ -280,14 +292,17 @@ function insertCoolPic(section){
    'display': function(){
      $('#education').append(HTMLeducationTitle);
      $('#education').append(HTMLeducationContent);
-     for(var i=0; i<this.schools.length; i++){
-       this.displaySchools(i);
-       checkToInsertCoolPic(i, '#ed-content');
+     if(this.schools){
+       for(var i=0; i<this.schools.length; i++){
+         this.displaySchools(i);
+         checkToInsertCoolPic(i, '#ed-content');
+       }
      }
-
-     for(var i=0; i<this.onlineCourses.length; i++){
-       this.displayOnlineCourses(i);
-       checkToInsertCoolPic(i, '#ed-content');
+     if(this.onlineCourses){
+       for(var i=0; i<this.onlineCourses.length; i++){
+         this.displayOnlineCourses(i);
+         checkToInsertCoolPic(i, '#ed-content');
+       }
      }
    },
    'displaySchools': function(index){
@@ -317,4 +332,4 @@ projects.display();
 work.display();
 education.display();
 
-$('#mapDiv').append(googleMap);
+// $('#mapDiv').append(googleMap);
