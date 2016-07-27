@@ -31,30 +31,34 @@ var bio = {
    'display': function(){
      // Render header
      var role_split = bioHelper.split_role();
-     $('#header-intro').append(HTMLheaderRole.replace('%data%', role_split[0]));
-     $('#header-intro').append(HTMLbioPic.replace('%data%', this.biopic));
-     $('#header-intro').append(HTMLheaderRole.replace('%data%', role_split[1]));
-     $('header').append(HTMLheaderName.replace('%data%', this.name));
+     if(this.biopic && this.role && this.name){
+       $('#header-intro').append(HTMLheaderRole.replace('%data%', role_split[0]));
+       $('#header-intro').append(HTMLbioPic.replace('%data%', this.biopic));
+       $('#header-intro').append(HTMLheaderRole.replace('%data%', role_split[1]));
+       $('header').append(HTMLheaderName.replace('%data%', this.name));
+     }
      // Render personal information section
-     $('#personal-section').prepend(HTMLPersonalSectionTitle);
-     $('#personal-section').append(HTMLPersonalContent);
-     $('#personal-content').append(HTMLabout);
-     $('#about-me').append(HTMLaboutTitle.replace('%data%', 'Who am I?'));
-     $('#about-me').append(HTMLwelcomeMsg.replace('%data%', this.welcomeMessage));
-     $('#personal-content').append(HTMLBucketPhrase);
-     $('#decor-phrase').append(HTMLDecorPhrase.replace('%data%', 'Any fool can write code '+
-        'that a computer can understand. Good programmers write code that humans can understand. '+
-        'Martin Fowler. '));
-     $('#personal-content').append(HTMLBucketPicPersonal);
-     $('#decor-pic').append(HTMLBucketPic);
-     $('#personal-content').append(HTMLBucketContact);
-     $('#contact').append(HTMLBucketContactTitle.replace('%data%', 'Contact'));
-     $('#contact').append(HTMLContactList);
-     $('#contact-list').append(HTMLmobile.replace('%data%', this.contacts.mobile));
-     $('#contact-list').append(HTMLemail.replace('%data%', this.contacts.email));
-     $('#contact-list').append(HTMLlocation.replace('%data%', this.contacts.location));
-     $('#contact-list').append(HTMLgithub.replace('%data%', this.contacts.github));
-     $('#contact-list').append(HTMLtwitter.replace('%data%', this.contacts.twitter));
+     if(this.contacts){
+       $('#personal-section').prepend(HTMLPersonalSectionTitle);
+       $('#personal-section').append(HTMLPersonalContent);
+       $('#personal-content').append(HTMLabout);
+       $('#about-me').append(HTMLaboutTitle.replace('%data%', 'Who am I?'));
+       $('#about-me').append(HTMLwelcomeMsg.replace('%data%', this.welcomeMessage));
+       $('#personal-content').append(HTMLBucketPhrase);
+       $('#decor-phrase').append(HTMLDecorPhrase.replace('%data%', 'Any fool can write code '+
+       'that a computer can understand. Good programmers write code that humans can understand. '+
+       'Martin Fowler. '));
+       $('#personal-content').append(HTMLBucketPicPersonal);
+       $('#decor-pic').append(HTMLBucketPic);
+       $('#personal-content').append(HTMLBucketContact);
+       $('#contact').append(HTMLBucketContactTitle.replace('%data%', 'Contact'));
+       $('#contact').append(HTMLContactList);
+       $('#contact-list').append(HTMLmobile.replace('%data%', this.contacts.mobile));
+       $('#contact-list').append(HTMLemail.replace('%data%', this.contacts.email));
+       $('#contact-list').append(HTMLlocation.replace('%data%', this.contacts.location));
+       $('#contact-list').append(HTMLgithub.replace('%data%', this.contacts.github));
+       $('#contact-list').append(HTMLtwitter.replace('%data%', this.contacts.twitter));
+     }
      // Render skills section
      $('#skills').prepend(HTMLSkillsTitle);
      $('#skills').append(HTMLSkillsContent);
@@ -79,11 +83,13 @@ var bio = {
    ],
    // Helper function to display role as per design
    'split_role': function(){
-     var role_array = bio.role.split(' ');
-     var mid_point = Math.floor(role_array.length / 2);
-     var first = role_array.splice(0, mid_point).toString();
-     var last = role_array.toString();
-     return [first, last];
+     if(bio.role){
+       var role_array = bio.role.split(' ');
+       var mid_point = Math.floor(role_array.length / 2);
+       var first = role_array.splice(0, mid_point).toString();
+       var last = role_array.toString();
+       return [first, last];
+     }
    },
    // Helper function to display an image for each skill, if an image is available
    'format_skill': function(word){
