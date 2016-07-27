@@ -59,12 +59,12 @@ var HTMLschoolDegree = '<h3 class="education-entry">%data%</h3>';
 var HTMLschoolName = '<h4 class="education-entry">%data%</h4>';
 var HTMLschoolDates = '<div class="date-text education-entry"><i class="fa fa-calendar" aria-hidden="true"></i> %data%</div>';
 var HTMLschoolLocation = '<div class="location-text education-entry"><i class="fa fa-map-marker" aria-hidden="true"></i>  %data%</div>';
-var HTMLschoolURL = '<a href="linkTo">%data%</a>';
+var HTMLschoolURL = '<a href="%linkTo%" target="_blank">%data%</a>';
 
 var HTMLonlineTitle = '<h3 class="education-entry">%data%</h3>';
 var HTMLonlineSchool = '<h4 class="education-entry">%data%</h4>';
 var HTMLonlineDates = '<div class="date-text education-entry"><i class="fa fa-calendar" aria-hidden="true"></i> %data%</div>';
-var HTMLonlineURL = '<a href="linkTo">%data%</a>';
+var HTMLonlineURL = '<a href="%linkTo%" target="_blank">%data%</a>';
 
 var HTMLimgBucket = '<div class="flex-item cool-img"></div>'; // for generic or decorative images
 

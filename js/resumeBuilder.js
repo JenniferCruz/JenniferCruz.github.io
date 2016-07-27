@@ -298,7 +298,7 @@ function insertCoolPic(section){
        if(i < this.schools[index].majors.length - 1) $('.ed-entry:last h3').append(' / ');
      }
      $('.ed-entry:last').append(HTMLschoolDegree.replace('%data%', this.schools[index].degree));
-     $('.ed-entry:last').append(HTMLschoolName.replace('%data%', this.schools[index].name).replace('#',  this.schools[index].url));
+     $('.ed-entry:last').append(HTMLschoolName.replace('%data%', this.schools[index].name));
      $('.ed-entry:last').append(HTMLschoolDates.replace('%data%', this.schools[index].dates));
      $('.ed-entry:last').append(HTMLschoolLocation.replace('%data%', this.schools[index].location));
      $('.ed-entry:last').append(HTMLschoolURL.replace('%linkTo%', this.schools[index].url).replace('%data%', 'visit school website>'));
