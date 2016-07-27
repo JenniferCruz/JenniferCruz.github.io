@@ -60,10 +60,12 @@ var bio = {
        $('#contact-list').append(HTMLtwitter.replace('%data%', this.contacts.twitter));
      }
      // Render skills section
-     $('#skills').prepend(HTMLSkillsTitle);
-     $('#skills').append(HTMLSkillsContent);
-     for(var i=0; i<this.skills.length; i++){
-       $('#skills-content').append(bioHelper.format_skill(this.skills[i]));
+     if(this.skills){
+       $('#skills').prepend(HTMLSkillsTitle);
+       $('#skills').append(HTMLSkillsContent);
+       for(var i=0; i<this.skills.length; i++){
+         $('#skills-content').append(bioHelper.format_skill(this.skills[i]));
+       }
      }
    }
  }
@@ -123,23 +125,25 @@ var bio = {
    'display': function(){
      $('#projects').append(HTMLprojectTitle);
      $('#projects').append(HTMLprojectsContent);
-     for(var i=0; i<this.projects.length; i++){
-       $('#projects-content').append(HTMLprojectBucket);
-       $('.project-entry:last').append(HTMLprojectName.replace('%data%', this.projects[i].title));
-       $('.project-entry:last').append(HTMLprojectDates.replace('%data%', this.projects[i].dates));
-       $('.project-entry:last').append(HTMLprojectGallery);
-       $('.project-gallery:last').append(HTMLprojectGalleryLeft);
-       $('.project-gallery:last').append(HTMLprojectGalleryImgSet);
-       for(var j=0; j<this.projects[i].images.length; j++){
-         // Use if/else instead of ternary expression because content within brackets is too long
-         if(j === 0){
-           $('.image-set:last').append(HTMLprojectImgVisible.replace('%ulr-to-img%', this.projects[i].images[j]));
-         } else {
-           $('.image-set:last').append(HTMLprojectImgHidden.replace('%ulr-to-img%', this.projects[i].images[j]));
+     if(this.projects){
+       for(var i=0; i<this.projects.length; i++){
+         $('#projects-content').append(HTMLprojectBucket);
+         $('.project-entry:last').append(HTMLprojectName.replace('%data%', this.projects[i].title));
+         $('.project-entry:last').append(HTMLprojectDates.replace('%data%', this.projects[i].dates));
+         $('.project-entry:last').append(HTMLprojectGallery);
+         $('.project-gallery:last').append(HTMLprojectGalleryLeft);
+         $('.project-gallery:last').append(HTMLprojectGalleryImgSet);
+         for(var j=0; j<this.projects[i].images.length; j++){
+           // Use if/else instead of ternary expression because content within brackets is too long
+           if(j === 0){
+             $('.image-set:last').append(HTMLprojectImgVisible.replace('%ulr-to-img%', this.projects[i].images[j]));
+           } else {
+             $('.image-set:last').append(HTMLprojectImgHidden.replace('%ulr-to-img%', this.projects[i].images[j]));
+           }
          }
+         $('.project-gallery:last').append(HTMLprojectGalleryRight);
+         $('.project-entry:last').append(HTMLprojectDescription.replace('%data%', this.projects[i].description));
        }
-       $('.project-gallery:last').append(HTMLprojectGalleryRight);
-       $('.project-entry:last').append(HTMLprojectDescription.replace('%data%', this.projects[i].description));
      }
    }
  }
@@ -221,14 +225,16 @@ var bio = {
    'display': function(){
      $('#work-experience').append(HTMLworkTitle);
      $('#work-experience').append(HTMLworkContent);
-     for(var i=0; i<this.jobs.length; i++){
-       $('#work-content').append(HTMLworkBucket);
-       $('.work-entry:last').append(HTMLworkEmployer.replace('%data%', this.jobs[i].employer));
-       $('.work-entry:last').append(HTMLworkDates.replace('%data%', this.jobs[i].dates));
-       $('.work-entry:last').append(HTMLjobTitle.replace('%data%', this.jobs[i].title));
-       $('.work-entry:last').append(HTMLworkLocation.replace('%data%', this.jobs[i].location));
-       $('.work-entry:last').append(HTMLworkDescription.replace('%data%', this.jobs[i].description));
-       checkToInsertCoolPic(i, '#work-content');
+     if(this.jobs){
+       for(var i=0; i<this.jobs.length; i++){
+         $('#work-content').append(HTMLworkBucket);
+         $('.work-entry:last').append(HTMLworkEmployer.replace('%data%', this.jobs[i].employer));
+         $('.work-entry:last').append(HTMLworkDates.replace('%data%', this.jobs[i].dates));
+         $('.work-entry:last').append(HTMLjobTitle.replace('%data%', this.jobs[i].title));
+         $('.work-entry:last').append(HTMLworkLocation.replace('%data%', this.jobs[i].location));
+         $('.work-entry:last').append(HTMLworkDescription.replace('%data%', this.jobs[i].description));
+         checkToInsertCoolPic(i, '#work-content');
+       }
      }
    }
  }
@@ -286,14 +292,17 @@ function insertCoolPic(section){
    'display': function(){
      $('#education').append(HTMLeducationTitle);
      $('#education').append(HTMLeducationContent);
-     for(var i=0; i<this.schools.length; i++){
-       this.displaySchools(i);
-       checkToInsertCoolPic(i, '#ed-content');
+     if(this.schools){
+       for(var i=0; i<this.schools.length; i++){
+         this.displaySchools(i);
+         checkToInsertCoolPic(i, '#ed-content');
+       }
      }
-
-     for(var i=0; i<this.onlineCourses.length; i++){
-       this.displayOnlineCourses(i);
-       checkToInsertCoolPic(i, '#ed-content');
+     if(this.onlineCourses){
+       for(var i=0; i<this.onlineCourses.length; i++){
+         this.displayOnlineCourses(i);
+         checkToInsertCoolPic(i, '#ed-content');
+       }
      }
    },
    'displaySchools': function(index){
@@ -323,4 +332,4 @@ projects.display();
 work.display();
 education.display();
 
-$('#mapDiv').append(googleMap);
+// $('#mapDiv').append(googleMap);

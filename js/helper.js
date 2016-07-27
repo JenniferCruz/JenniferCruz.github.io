@@ -37,7 +37,7 @@ var HTMLworkLocation = '<div class="location-text work-details"><i class="fa fa-
 var HTMLworkDescription = '<p class="description work-details">%data%</p>';
 
 var HTMLprojectTitle = '<div class="section-title"><h2>Projects</h2></div>';
-var HTMLprojectsContent = '<div id="projects-content" class="line content flex-box project-details"></div>';
+var HTMLprojectsContent = '<div id="projects-content" class="line content flex-box"></div>';
 var HTMLprojectBucket = '<div class="flex-item project-entry "></div>';
 var HTMLprojectDates = '<div class="date-text project-details"><i class="fa fa-calendar" aria-hidden="true"></i> %data%</div>';
 var HTMLprojectDescription = '<p class="description project-details">%data%</p>';
