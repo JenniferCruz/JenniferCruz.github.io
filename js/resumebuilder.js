@@ -93,7 +93,7 @@ var bio = {
    // Helper function to find the image that matches the skill
    'find_in_skill_array': function(word){
      for(var i = 0; i<this.skillpics.length; i++){
-       if(this.skillpics[i].toLowerCase().includes(word.toLowerCase())) return i;
+       if(this.skillpics[i].toLowerCase().search(word.toLowerCase()) >= 0) return i;
      }
      return -1;
    }
