@@ -348,6 +348,22 @@ header {
 }
 
 
+/* Back to top */
+
+.go-to-top {
+  text-align: center;
+  width: 150px;
+  font-size: 1.5em;
+  margin-left: 51%;
+  margin-right: 49%;
+}
+
+
+.go-to-top a {
+  color: #fff;
+}
+
+
 /* Media queries */
 
 @media screen and (max-width: 1300px) {
@@ -423,6 +439,12 @@ header {
 
   .skill {
     width: 25%;
+  }
+
+
+  .go-to-top {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
