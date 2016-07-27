@@ -1,8 +1,9 @@
 /* General */
 
 body {
-  background: url(../img/bg-bamboo.jpg) no-repeat 80% 50% fixed;
+  background: url(../img/bg-bamboo.jpg) no-repeat 100% 0% fixed;
   font: 16px "Oswald", sans-serif;
+  background-color: #d3e194;
 }
 
 
