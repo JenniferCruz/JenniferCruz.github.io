@@ -105,13 +105,13 @@ var bio = {
        'title': 'Grid layout framework',
        'dates': '05-2016',
        'description': 'Responsive website developed using own implementation of a grid layout system.',
-       'images': ['img/grid_1.jpg', 'img/grid_2.jpg', 'img/grid_3.jpg', 'img/grid_4.jpg']
+       'images': ['img/grid1.jpg', 'img/grid2.jpg', 'img/grid3.jpg', 'img/grid4.jpg']
      },
      {
        'title': 'Bootstrap Framework',
        'dates': '06-2016',
        'description': 'Responsive website developed using Bootstrap',
-       'images': ['img/boots_1.jpg', 'img/boots_2.jpg']
+       'images': ['img/bootstrap_1.jpg', 'img/bootstrap_2.jpg']
      }
    ],
    'display': function(){
@@ -235,7 +235,7 @@ function checkToInsertCoolPic(index, section){
 
 function insertCoolPic(section){
    $(section).append(HTMLimgBucket);
-   $('.cool-img:last').append('<img src=img/cool'+ coolImgCounter++ +'.jpg>');
+   $('.cool-img:last').append('<img src=img/decor'+ coolImgCounter++ +'.jpg>');
  }
 
  var education = {
