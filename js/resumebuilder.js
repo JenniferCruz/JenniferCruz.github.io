@@ -332,4 +332,4 @@ projects.display();
 work.display();
 education.display();
 
-// $('#mapDiv').append(googleMap);
+$('#mapDiv').append(googleMap);

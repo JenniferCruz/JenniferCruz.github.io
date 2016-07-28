@@ -348,6 +348,32 @@ header {
 }
 
 
+/* Back to top */
+
+.go-to-top {
+  text-align: center;
+  width: 150px;
+  font-size: 1.5em;
+  margin-left: 51%;
+  margin-right: 49%;
+}
+
+
+.go-to-top a {
+  color: #fff;
+}
+
+
+/* Map content */
+
+.map-content {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 5px solid #8cb13f;
+}
+
+
 /* Media queries */
 
 @media screen and (max-width: 1300px) {
@@ -405,7 +431,7 @@ header {
 
   .biopic {
     width: 40%;
-    border: 0.75em solid black;
+    border: 0.75em solid #000;
   }
 
 
@@ -423,6 +449,17 @@ header {
 
   .skill {
     width: 25%;
+  }
+
+
+  .go-to-top {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  .map-content {
+    width: 94%;
   }
 }
 
