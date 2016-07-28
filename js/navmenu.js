@@ -6,22 +6,22 @@ var main = document.querySelector('header');
 var drawer = document.querySelector('nav ul');
 
 menu.addEventListener('click', function(e) {
-  drawer.classList.toggle('open');
-  e.stopPropagation();
+    drawer.classList.toggle('open');
+    e.stopPropagation();
 
 });
 main.addEventListener('click', function() {
-  drawer.classList.remove('open');
+    drawer.classList.remove('open');
 });
 
 /*
  * Hover effect for navigation menu
  */
-$(document).ready(function(){
-  $("nav ul li").hover(highlight, highlight);
+$(document).ready(function() {
+    $("nav ul li").hover(highlight, highlight);
 });
 
-function highlight(){
-  $(this).toggleClass("highlight-menu");
-  $(this).children("img").toggleClass("img-hidden");
+function highlight() {
+    $(this).toggleClass("highlight-menu");
+    $(this).children("img").toggleClass("img-hidden");
 }
