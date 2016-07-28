@@ -364,6 +364,16 @@ header {
 }
 
 
+/* Map content */
+
+.map-content {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 5px solid #8cb13f;
+}
+
+
 /* Media queries */
 
 @media screen and (max-width: 1300px) {
@@ -421,7 +431,7 @@ header {
 
   .biopic {
     width: 40%;
-    border: 0.75em solid black;
+    border: 0.75em solid #000;
   }
 
 
@@ -445,6 +455,11 @@ header {
   .go-to-top {
     margin-left: auto;
     margin-right: auto;
+  }
+
+
+  .map-content {
+    width: 94%;
   }
 }
 
