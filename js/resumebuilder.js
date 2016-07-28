@@ -80,7 +80,6 @@ var bio = {
      './img/logo-css.png',
      './img/logo-grunt.png',
      'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/English_language.svg/800px-English_language.svg.png',
-     './img/logo-spanish.gif',
      'https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Italy.svg/512px-Flag_of_Italy.svg.png#italian'
    ],
    // Helper function to display role as per design

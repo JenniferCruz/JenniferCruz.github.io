@@ -95,6 +95,25 @@ p.description {
 }
 
 
+/* Footer */
+
+footer {
+  text-align: center;
+  color: #4c5c22;
+  width: 86%;
+  border-top: 2px solid #4c5c22;
+  margin-left: auto;
+  margin-top: 2em;
+  padding-bottom: 1em;
+}
+
+
+.go-to-top a {
+  font-size: 1.5em;
+  color: #fff;
+}
+
+
 /* Navigation menu */
 
 .fa.fa-bars {
@@ -283,7 +302,7 @@ header {
 
 .standout {
   text-align: center;
-  font-size: 5em;
+  font-size: 3.5em;
   order: 10;
 }
 
@@ -345,22 +364,6 @@ header {
 
 .img-hidden {
   display: none;
-}
-
-
-/* Back to top */
-
-.go-to-top {
-  text-align: center;
-  width: 150px;
-  font-size: 1.5em;
-  margin-left: 51%;
-  margin-right: 49%;
-}
-
-
-.go-to-top a {
-  color: #fff;
 }
 
 
@@ -452,14 +455,13 @@ header {
   }
 
 
-  .go-to-top {
-    margin-left: auto;
-    margin-right: auto;
+  .map-content {
+    width: 94%;
   }
 
 
-  .map-content {
-    width: 94%;
+  footer {
+    width: 100%;
   }
 }
 
