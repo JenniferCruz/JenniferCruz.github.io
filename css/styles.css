@@ -1,220 +1,193 @@
 /* General */
 
 body {
-  background: url(../img/bg-bamboo.jpg) no-repeat 100% 0% fixed;
-  font: 16px "Oswald", sans-serif;
-  background-color: #d3e194;
+    background: url(../img/bg-bamboo.jpg) no-repeat 100% 0% fixed;
+    font: 16px "Oswald", sans-serif;
+    background-color: #d3e194;
 }
-
 
 .container {
-  width: 75%;
-  margin: 0 auto;
+    width: 75%;
+    margin: 0 auto;
 }
-
 
 h4 {
-  margin: 10px 0;
+    margin: 10px 0;
 }
-
 
 a {
-  color: #dcdcdc;
-  font-size: 0.9em;
-  text-decoration: none;
+    color: #dcdcdc;
+    font-size: 0.9em;
+    text-decoration: none;
 }
-
 
 .flex-box {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
-
 
 .flex-item {
-  width: 42%;
-  padding: 15px;
-  margin: 8px;
-  font-weight: 100;
+    width: 42%;
+    padding: 15px;
+    margin: 8px;
+    font-weight: 100;
 }
-
 
 .section-title h2 {
-  color: #6c8532;
-  font-weight: 100;
-  font-size: 2em;
-  text-transform: uppercase;
-  text-align: right;
-  margin: 0;
+    color: #6c8532;
+    font-weight: 100;
+    font-size: 2em;
+    text-transform: uppercase;
+    text-align: right;
+    margin: 0;
 }
-
 
 .section-title {
-  width: 14%;
+    width: 14%;
 }
-
 
 .img-clip {
-  padding: 0 0 15px 30px;
+    padding: 0 0 15px 30px;
 }
-
 
 .content {
-  width: 86%;
+    width: 86%;
 }
-
 
 h3.right-h3 {
-  text-align: right;
+    text-align: right;
 }
-
 
 .flex-item h3 {
-  margin: 0;
-  text-transform: uppercase;
-  font-weight: 100;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 100;
 }
-
 
 .flex-item img {
-  width: 100%;
+    width: 100%;
 }
-
 
 .date-text {
-  font-size: 0.8em;
+    font-size: 0.8em;
 }
 
-
 p.description {
-  font-family: "Raleway", sans-serif;
-  margin-left: 10px;
-  padding-left: 5px;
-  border-left: 2px solid #d3e194;
+    font-family: "Raleway", sans-serif;
+    margin-left: 10px;
+    padding-left: 5px;
+    border-left: 2px solid #d3e194;
 }
 
 
 /* Footer */
 
 footer {
-  text-align: center;
-  color: #4c5c22;
-  width: 86%;
-  border-top: 2px solid #4c5c22;
-  margin-left: auto;
-  margin-top: 2em;
-  padding-bottom: 1em;
+    text-align: center;
+    color: #4c5c22;
+    width: 86%;
+    border-top: 2px solid #4c5c22;
+    margin-left: auto;
+    margin-top: 2em;
+    padding-bottom: 1em;
 }
 
-
 .go-to-top a {
-  font-size: 1.5em;
-  color: #fff;
+    font-size: 1.5em;
+    color: #fff;
 }
 
 
 /* Navigation menu */
 
 .fa.fa-bars {
-  font-size: 2em;
-  color: #4c5c22;
-  display: none;
+    font-size: 2em;
+    color: #4c5c22;
+    display: none;
 }
-
 
 nav ul {
-  list-style-type: none;
-  text-align: center;
-  padding-left: 0;
+    list-style-type: none;
+    text-align: center;
+    padding-left: 0;
 }
-
 
 nav li {
-  display: inline;
-  margin: 5px;
+    display: inline;
+    margin: 5px;
 }
-
 
 nav a {
-  color: #000;
+    color: #000;
 }
-
 
 .closing-icon {
-  display: none;
+    display: none;
 }
 
-
 .highlight-menu img {
-  display: grid;
-  top: 0;
-  width: 60px;
-  position: absolute;
-  z-index: -10;
+    display: grid;
+    top: 0;
+    width: 60px;
+    position: absolute;
+    z-index: -10;
 }
 
 
 /* Header */
 
 .h-intro {
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
-
 
 header {
-  width: 91%;
-  margin-bottom: 1.5em;
-  margin-left: auto;
+    width: 91%;
+    margin-bottom: 1.5em;
+    margin-left: auto;
 }
-
 
 .biopic {
-  border-radius: 20em;
-  width: 25%;
-  border: 1em solid;
-  margin: 0 20px;
+    border-radius: 20em;
+    width: 25%;
+    border: 1em solid;
+    margin: 0 20px;
 }
-
 
 .role {
-  display: inline;
-  font-size: 1.5em;
-  text-transform: uppercase;
+    display: inline;
+    font-size: 1.5em;
+    text-transform: uppercase;
 }
 
-
 .name {
-  text-align: center;
-  margin: 0.25em 0;
-  font-family: "Raleway", sans-serif;
-  font-size: 1.9em;
+    text-align: center;
+    margin: 0.25em 0;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.9em;
 }
 
 
 /* Personal info */
 
 .contact-section ul {
-  list-style-type: none;
+    list-style-type: none;
 }
-
 
 .fa-icon {
-  color: #93780f;
-  font-size: 2.5em !important;
-  margin-right: 10px;
+    color: #93780f;
+    font-size: 2.5em !important;
+    margin-right: 10px;
 }
-
 
 .contact-section ul {
-  padding-left: 1em;
+    padding-left: 1em;
 }
 
-
 .clip-phrase {
-  text-align: center;
+    text-align: center;
 }
 
 
@@ -223,358 +196,312 @@ header {
 .violet,
 .project-entry:nth-child(1),
 .ed-entry:nth-child(1) {
-  background-color: #7e1275;
-  color: #fff;
+    background-color: #7e1275;
+    color: #fff;
 }
-
 
 .bright-orange,
 .project-entry:nth-child(2),
 .ed-entry:nth-child(2) {
-  background-color: #f60;
+    background-color: #f60;
 }
-
 
 .green,
 .work-entry:nth-child(1),
 .ed-entry:nth-child(3) {
-  background-color: #8cb13f;
+    background-color: #8cb13f;
 }
-
 
 .mustard,
 .work-entry:nth-child(2),
 .ed-entry:nth-child(4) {
-  background-color: #efbf03;
-  color: #fff;
+    background-color: #efbf03;
+    color: #fff;
 }
-
 
 .skill:nth-child(1),
 .skill:nth-child(7),
 .work-entry:nth-child(3),
 .ed-entry:nth-child(5) {
-  background-color: #30aadb;
+    background-color: #30aadb;
 }
-
 
 .skill:nth-child(2),
 .skill:nth-child(8),
 .work-entry:nth-child(4) {
-  background-color: #6735cc;
+    background-color: #6735cc;
 }
-
 
 .skill:nth-child(3),
 .skill:nth-child(9),
 .work-entry:nth-child(5) {
-  background-color: #fba919;
+    background-color: #fba919;
 }
-
 
 .skill:nth-child(4),
 .skill:nth-child(10),
 .work-entry:nth-child(6) {
-  background-color: #e44503;
+    background-color: #e44503;
 }
-
 
 .skill:nth-child(5),
 .skill:nth-child(11),
 .work-entry:nth-child(7) {
-  background-color: #009997;
+    background-color: #009997;
 }
-
 
 .skill:nth-child(6),
 .skill:nth-child(12),
 .work-entry:nth-child(8) {
-  background-color: #8cb13f;
+    background-color: #8cb13f;
 }
 
-
 .cool-img {
-  background-color: #ff7f50;
+    background-color: #ff7f50;
 }
 
 
 /* Skills section */
 
 .standout {
-  text-align: center;
-  font-size: 3.5em;
-  order: 10;
+    text-align: center;
+    font-size: 3.5em;
+    order: 10;
 }
-
 
 .skill img {
-  max-width: 12em;
-  display: block;
-  margin: 0 auto;
-  padding: 2em 0;
+    max-width: 12em;
+    display: block;
+    margin: 0 auto;
+    padding: 2em 0;
 }
 
-
 .skill {
-  width: 26%;
+    width: 26%;
 }
 
 
 /* project galleries */
 
 .project-gallery {
-  margin-top: 5px;
-  display: flex;
-  text-align: center;
-  align-items: center;
+    margin-top: 5px;
+    display: flex;
+    text-align: center;
+    align-items: center;
 }
-
 
 .image-set img {
-  max-width: 100%;
-  border-radius: 0 5px;
+    max-width: 100%;
+    border-radius: 0 5px;
 }
-
 
 .arrow {
-  margin: 0;
-  padding: 0;
-  width: 10%;
-  font-size: 50px;
+    margin: 0;
+    padding: 0;
+    width: 10%;
+    font-size: 50px;
 }
-
 
 .unabled {
-  color: #808080;
-  font-weight: bolder;
+    color: #808080;
+    font-weight: bolder;
 }
-
 
 .abled {
-  cursor: pointer;
-  color: #fff;
+    cursor: pointer;
+    color: #fff;
 }
-
 
 .image-set {
-  display: inline;
-  width: 80%;
+    display: inline;
+    width: 80%;
 }
 
-
 .img-hidden {
-  display: none;
+    display: none;
 }
 
 
 /* Map content */
 
 .map-content {
-  width: 77%;
-  margin-left: auto;
-  margin-right: auto;
-  border: 5px solid #8cb13f;
+    width: 77%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid #8cb13f;
 }
 
 
 /* Media queries */
 
 @media screen and (max-width: 1300px) {
-  .container {
-    width: 90%;
-  }
+    .container {
+        width: 90%;
+    };
 }
-
 
 @media screen and (max-width: 1050px) {
-  .container {
-    width: 100%;
-  }
+    .container {
+        width: 100%;
+    }
 
+    .section-title h2 {
+        font-size: 1.5em;
+        margin-top: 0.25em;
+    }
 
-  .section-title h2 {
-    font-size: 1.5em;
-    margin-top: 0.25em;
-  }
-
-
-  .biopic {
-    width: 30%;
-  }
+    .biopic {
+        width: 30%;
+    };
 }
-
 
 @media only screen and (max-width: 750px) {
-  .section-title,
+    .section-title,
   .content {
-    width: 100%;
-  }
+        width: 100%;
+    }
 
+    header {
+        margin: 0;
+        width: 100%;
+    }
 
-  header {
-    margin: 0;
-    width: 100%;
-  }
+    .flex-item {
+        width: 42%;
+    }
 
+    .contact-section {
+        order: 0;
+    }
 
-  .flex-item {
-    width: 42%;
-  }
+    .img-clip {
+        order: 5;
+    }
 
+    .biopic {
+        width: 40%;
+        border: 0.75em solid #000;
+    }
 
-  .contact-section {
-    order: 0;
-  }
+    .section-title h2 {
+        text-align: left;
+        font-size: 2em;
+        color: #4c5c22;
+    }
 
+    .standout {
+        font-size: 3em;
+    }
 
-  .img-clip {
-    order: 5;
-  }
+    .skill {
+        width: 25%;
+    }
 
+    .map-content {
+        width: 94%;
+    }
 
-  .biopic {
-    width: 40%;
-    border: 0.75em solid #000;
-  }
-
-
-  .section-title h2 {
-    text-align: left;
-    font-size: 2em;
-    color: #4c5c22;
-  }
-
-
-  .standout {
-    font-size: 3em;
-  }
-
-
-  .skill {
-    width: 25%;
-  }
-
-
-  .map-content {
-    width: 94%;
-  }
-
-
-  footer {
-    width: 100%;
-  }
+    footer {
+        width: 100%;
+    };
 }
-
 
 @media only screen and (max-width: 620px) {
-  .flex-item {
-    width: 90%;
-  }
+    .flex-item {
+        width: 90%;
+    }
 
-
-  .img-clip-logo,
+    .img-clip-logo,
   .standout {
-    width: 40%;
-  }
+        width: 40%;
+    }
 
+    .skill img {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
 
-  .skill img {
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-
-
-  .biopic {
-    width: 40%;
-  }
+    .biopic {
+        width: 40%;
+    };
 }
-
 
 @media only screen and (max-width: 500px) {
-  .img-clip-logo,
+    .img-clip-logo,
   .standout {
-    width: 80%;
-  }
+        width: 80%;
+    }
 
+    .biopic {
+        width: 60%;
+        margin: 0 70px;
+    }
 
-  .biopic {
-    width: 60%;
-    margin: 0 70px;
-  }
+    h2.role {
+        margin: 0;
+    }
 
+    .open-icon {
+        display: block;
+    }
 
-  h2.role {
-    margin: 0;
-  }
+    .highlight-menu {
+        background-image: none;
+        font-size: 1.2em;
+    }
 
+    .highlight-menu img {
+        display: none;
+    }
 
-  .open-icon {
-    display: block;
-  }
+    .closing-icon {
+        display: list-item;
+        ;
+    }
 
+    nav li {
+        display: list-item;
+        text-align: left;
+        border-bottom: 1px solid #000;
+    }
 
-  .highlight-menu {
-    background-image: none;
-    font-size: 1.2em;
-  }
+    .close-icon {
+        display: block;
+        font-size: 1.5em;
+    }
 
-  .highlight-menu img {
-    display: none;
-  }
+    nav ul {
+        width: 90%;
+        font-size: 1.5em;
+        position: absolute;
+        margin: 5px 0;
+        background: rgba(211, 225, 40, 0.98);
+        -webkit-transform: translate(-1000px, 0);
+        transform: translate(-1000px, 0);
+        z-index: 10;
+    }
 
-  .closing-icon {
-    display: list-item;;
-  }
+    nav ul.open {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+        width: 100%;
+        min-height: 100%;
+        right: 0;
+        top: 0;
+        display: block;
+    }
 
-  nav li {
-    display: list-item;
-    text-align: left;
-    border-bottom: 1px solid #000;
-  }
+    i.fa.fa-bars {
+        display: inline;
+    }
 
-
-  .close-icon {
-    display: block;
-    font-size: 1.5em;
-  }
-
-
-  nav ul {
-    width: 90%;
-    font-size: 1.5em;
-    position: absolute;
-    margin: 5px 0;
-    background: rgba(211, 225, 40, 0.98);
-    -webkit-transform: translate(-1000px, 0);
-    transform: translate(-1000px, 0);
-    z-index: 10;
-  }
-
-
-  nav ul.open {
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0);
-    width: 100%;
-    min-height: 100%;
-    right: 0;
-    top: 0;
-    display: block;
-  }
-
-
-  i.fa.fa-bars {
-    display: inline;
-  }
-
-
-  .skill {
-    width: 36%;
-  }
+    .skill {
+        width: 36%;
+    };
 }
 
-
 @media only screen and (max-width: 380px) {
-  .skill {
-    width: 90%;
-  }
+    .skill {
+        width: 90%;
+    };
 }
