@@ -7,7 +7,7 @@ var bio = {
     'role': 'web dev',
     'contacts': {
         'mobile': '469-555-5555',
-        'email': 'jennifer.cruzz@gmail.com',
+        'email': '[gmail] jennifer.cruzz',
         'github': 'JenniferCruz',
         'twitter': '@j3nniCruz',
         'location': 'Dallas, TX'
